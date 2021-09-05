@@ -1,0 +1,12 @@
+export { default as Arrow } from './Arrow';
+export { default as Basketball } from './Basketball';
+export { default as Box } from './Box';
+export { default as Contact } from './Contact';
+export { default as Experience } from './Experience';
+export { default as Pencil } from './Pencil';
+export { default as RocketShip } from './RocketShip';
+export { default as StackOfBooks } from './StackOfBooks';
+export { default as Sun } from './Sun';
+export { default as Water } from './Water';
+export { default as Wrench } from './Wrench';
+export { default as Mail } from './Mail';
