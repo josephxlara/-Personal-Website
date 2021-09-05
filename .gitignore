@@ -10,8 +10,6 @@
 
 # production
 /build
-src/FlatIcons
-src/TechLogos
 
 # misc
 .DS_Store
