@@ -65,7 +65,7 @@ export const AboutMeInfo = [
             {
                 item: 'Pantry.io',
                 stack: [
-                    Javascript, ReactLogo, Firebase
+                    Javascript, ReactLogo, Expo, Firebase
                 ],
                 link: 'https://thepantryapp.io/'
             }

@@ -8,18 +8,13 @@ import '../styles.scss'
 // SVGs
 import { Pencil } from '../FlatIcons';
 
-const Header = ({ lightMode }) => {
+const Title = ({ lightMode }) => {
     const Container = styled.div`
-        position: absolute;
         justify-content: center;
         display: flex;
         align-items: center;
         flex-direction: column;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: 0;
+        background-color: ${lightMode ? '#3d3d3d' : 'white'}
     `
 
     const Name = styled.h1`
@@ -51,4 +46,4 @@ const Header = ({ lightMode }) => {
     )
 }
 
-export default Header;
+export default Title;
