@@ -2,18 +2,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AboutMeInfo } from '../Constants';
-import Switch from './Switch';
 
 // SVG
 import { Pencil } from '../FlatIcons';
 
 // Component
-import Section from './Section';
+import AboutSection from './AboutSection';
 
 // Style
 import '../styles.scss';
 
-const About = ({ lightMode, setLightMode }) => {
+const About = ({ lightMode }) => {
     const Container = styled.div`
         width: 100%;
         justify-content: center;
@@ -76,7 +75,6 @@ const About = ({ lightMode, setLightMode }) => {
 
     return (
         <Container>
-            <Switch lightMode={lightMode} setLightMode={setLightMode} />
             <SourceCode>
                 <a 
                     href='https://github.com/josephxlara/-Personal-Website' 
@@ -101,7 +99,7 @@ const About = ({ lightMode, setLightMode }) => {
                 </Header>
                 {
                     AboutMeInfo.map(section => {
-                        return <Section section={section} lightMode={lightMode}  />
+                        return <AboutSection section={section} lightMode={lightMode}  />
                     })
                 }
             </div>

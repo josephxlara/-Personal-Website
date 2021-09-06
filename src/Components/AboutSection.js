@@ -1,8 +1,8 @@
-// General Imports
+// General
 import React from 'react';
 import styled from 'styled-components';
 
-const Section = ({ section, lightMode }) => {
+const AboutSection = ({ section, lightMode }) => {
     const SectionHeader = styled.h1`
         color: ${lightMode ? '#3d3d3d' : 'white'};
         margin: 0;
@@ -10,7 +10,7 @@ const Section = ({ section, lightMode }) => {
         font-size: 24px;
         margin-bottom: 8px;
     `
-
+    
     return (
         <div className='sectionDiv'>
             <section.sectionIcon className='sectionIcon' alt={60} height={60} />
@@ -41,7 +41,7 @@ const Section = ({ section, lightMode }) => {
                                     {sectionBodyItem.item}
                                 </h3>
                                 }
-                                <div>
+                                <div className='projectStack'>
                                     {
                                         sectionBodyItem.stack &&
                                         sectionBodyItem.stack.map(Tech => {
@@ -58,4 +58,4 @@ const Section = ({ section, lightMode }) => {
     )
 }
 
-export default Section;
+export default AboutSection;

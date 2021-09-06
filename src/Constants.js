@@ -67,7 +67,8 @@ export const AboutMeInfo = [
                 stack: [
                     Javascript, ReactLogo, Expo, Firebase
                 ],
-                link: 'https://thepantryapp.io/'
+                link: 'https://thepantryapp.io/',
+                aboutExperience: 'I designed and deployed a cross-platform mobile application that comes with 4 features and one in-app subscription. Download Pantry.io today to make your grocery-buying experience better!'
             }
         ]
     },
