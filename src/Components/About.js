@@ -31,9 +31,6 @@ const About = ({ lightMode }) => {
         display: flex;
         align-items: center;
         flex-direction: column;
-        @media only screen and (max-width: 375px) {
-            margin: 64px 0 120px 0;
-        }
         margin: 120px 0 120px 0;
     `
 

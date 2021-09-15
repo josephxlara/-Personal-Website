@@ -1,6 +1,6 @@
 // About.js
 .gradientDiv {
-  height: 640px;
+  height: 400px;
   display: flex;
   width: 100%;
   position: absolute;
@@ -10,9 +10,9 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 400px) {
   .gradientDiv {
-    height: 320px;
+    height: 520px;
   }
 }
 
