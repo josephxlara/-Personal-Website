@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const AboutSection = ({ section, lightMode }) => {
     const SectionHeader = styled.h1`
-        color: ${lightMode ? '#3d3d3d' : 'white'};
+        color: ${lightMode ? '#333333' : 'white'};
         margin: 0;
         font-weight: 500;
         font-size: 24px;
@@ -26,7 +26,7 @@ const AboutSection = ({ section, lightMode }) => {
                                 {sectionBodyItem.link 
                                 ? 
                                 <a 
-                                    style={{ color: lightMode ? '#3d3d3d' : 'white' }} 
+                                    style={{ color: lightMode ? '#333333' : 'white' }} 
                                     alt='blankLink' 
                                     rel="noopener noreferrer" 
                                     target="_blank" 
@@ -36,7 +36,7 @@ const AboutSection = ({ section, lightMode }) => {
                                 </a> 
                                 : 
                                 <h3 
-                                    style={{ color: lightMode ? '#3d3d3d' : 'white' }} 
+                                    style={{ color: lightMode ? '#333333' : 'white' }} 
                                 >
                                     {sectionBodyItem.item}
                                 </h3>

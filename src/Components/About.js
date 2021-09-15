@@ -19,7 +19,7 @@ const About = ({ lightMode }) => {
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        background-color: ${lightMode ? 'white' : '#3d3d3d'};
+        background-color: ${lightMode ? 'white' : '#333333'};
         height: 1400px;
         @media only screen and (min-height: 1400px) {
             height: 100vh;
@@ -31,17 +31,17 @@ const About = ({ lightMode }) => {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin: 120px 0 120px 0;
+        margin: 88px 0 148px 0;
     `
 
     const Name = styled.h1`
-        color: ${lightMode ? '#3d3d3d' : 'white'}}
+        color: ${lightMode ? '#333333' : 'white'}}
         margin: 0;
         font-size: 3rem;
     `
 
     const Engineer = styled.h3`
-        color: ${lightMode ? '#3d3d3d' : 'white'}}
+        color: ${lightMode ? '#333333' : 'white'}}
         margin: 0;
         margin-top: 8px;
         font-size: 1.2rem;
