@@ -45,7 +45,7 @@ const AboutSection = ({ section, lightMode }) => {
                                     {
                                         sectionBodyItem.stack &&
                                         sectionBodyItem.stack.map(Tech => {
-                                            return <Tech lightMode={lightMode} style={{ marginRight: '8px', display: 'flex' }} height={16} width={16} />
+                                            return <Tech lightMode={lightMode} style={{ marginRight: '6px', display: 'flex' }} width={16} height={16} />
                                         })
                                     }
                                 </div>

@@ -5,6 +5,7 @@ import { AboutMeInfo } from '../Constants';
 
 // SVG
 import { Pencil } from '../FlatIcons';
+import Gradient from '../Gradient';
 
 // Component
 import AboutSection from './AboutSection';
@@ -17,6 +18,7 @@ const About = ({ lightMode }) => {
         width: 100%;
         justify-content: center;
         display: flex;
+        flex-wrap: wrap;
         background-color: ${lightMode ? 'white' : '#3d3d3d'};
         height: 1400px;
         @media only screen and (min-height: 1400px) {
@@ -29,6 +31,9 @@ const About = ({ lightMode }) => {
         display: flex;
         align-items: center;
         flex-direction: column;
+        @media only screen and (max-width: 375px) {
+            margin: 64px 0 120px 0;
+        }
         margin: 120px 0 120px 0;
     `
 
@@ -59,7 +64,10 @@ const About = ({ lightMode }) => {
       align-items: center;
       display: flex;
       background-color: #2196F3;
-      & > a, a:link, a:visited {
+      :hover {
+          background-color: #208de3;
+      }
+      & a, a:link, a:visited {
         color: white;
         display: flex;
         justify-content: center;
@@ -75,6 +83,9 @@ const About = ({ lightMode }) => {
 
     return (
         <Container>
+            <div className="gradientDiv">
+                <Gradient className="gradient" lightMode={lightMode} />
+            </div>
             <SourceCode>
                 <a 
                     href='https://github.com/josephxlara/-Personal-Website' 

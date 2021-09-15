@@ -44,7 +44,7 @@ export const AboutMeInfo = [
             {
                 item: 'Philosophy',
                 icon: StackOfBooks,
-                link: 'https://www.youtube.com/watch?v=2kZRAOXEFPI&t=342s'
+                link: 'https://www.youtube.com/watch?v=iP9xNYCr5Js'
             },
             {
                 item: 'Technology',
@@ -79,7 +79,7 @@ export const AboutMeInfo = [
             {
                 item: 'Memories',
                 stack: [
-                    Javascript, ReactLogo, Node, MongoDB, Express
+                    Javascript, ReactLogo, Node, Express, MongoDB
                 ],
                 link: 'https://elegant-benz-786846.netlify.app/'
             },
