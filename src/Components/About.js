@@ -19,6 +19,7 @@ const About = ({ lightMode }) => {
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
+        z-index: -1;
         background-color: ${lightMode ? 'white' : '#333333'};
         height: 1400px;
         @media only screen and (min-height: 1400px) {
@@ -61,10 +62,11 @@ const About = ({ lightMode }) => {
       align-items: center;
       display: flex;
       background-color: #2196F3;
+      z-index: 999;
       :hover {
           background-color: #208de3;
       }
-      & a, a:link, a:visited {
+      & > a, a:link, a:visited {
         color: white;
         display: flex;
         justify-content: center;
