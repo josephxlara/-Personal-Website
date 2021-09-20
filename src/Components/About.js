@@ -31,22 +31,20 @@ const About = ({ lightMode }) => {
         justify-content: center;
         display: flex;
         align-items: center;
-        flex-direction: column;
-        margin: 88px 0 148px 0;
+        position: absolute;
+        left: 0;
+        margin-left: 12px;
+        margin-top: 12px;
     `
 
-    const Name = styled.h1`
-        color: ${lightMode ? '#333333' : 'white'}}
+    const Engineer = styled.p`
+        color: ${lightMode ? '#333333' : 'white'}};
+        font-weight: 600;
         margin: 0;
-        font-size: 3rem;
-    `
-
-    const Engineer = styled.h3`
-        color: ${lightMode ? '#333333' : 'white'}}
-        margin: 0;
-        margin-top: 8px;
         font-size: 1.2rem;
-        font-weight: normal
+        @media only screen and (min-width: 450px) {
+            font-size: 2rem;
+        }
     `
 
     const SourceCode = styled.div`
@@ -95,18 +93,12 @@ const About = ({ lightMode }) => {
                     src
                 </a>
             </SourceCode>
+            <Header>
+                <Engineer>
+                Software Engineer
+                </Engineer>
+            </Header>
             <div className='informationContainer'>
-                <Header>
-                    <div>
-                        <Pencil height={80} width={80} />
-                    </div>
-                    <Name>
-                        Joseph Lara
-                    </Name>
-                    <Engineer>
-                        Software Engineer
-                    </Engineer>
-                </Header>
                 {
                     AboutMeInfo.map(section => {
                         return <AboutSection section={section} lightMode={lightMode}  />

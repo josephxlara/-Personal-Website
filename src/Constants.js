@@ -88,7 +88,7 @@ export const AboutMeInfo = [
                 stack: [
                     Javascript, ReactLogo, Firebase
                 ],
-                link: 'https://bug--tracker.com/dashboard'
+                link: 'https://bug--tracker.com/'
             },
             {
                 item: 'Automate Spotify',
