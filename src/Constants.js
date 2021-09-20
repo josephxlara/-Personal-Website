@@ -24,6 +24,7 @@ import {
     Sun,
     Water,
     Wrench,
+    LocalStorage,
     Mail
 } from './FlatIcons';
 
@@ -90,6 +91,13 @@ export const AboutMeInfo = [
                     Javascript, ReactLogo, Firebase
                 ],
                 link: 'https://bug--tracker.com/'
+            },
+            {
+                item: 'Books to Read',
+                stack: [
+                    Javascript, ReactLogo, LocalStorage
+                ],
+                link: 'https://github.com/josephxlara/BooksToRead'
             },
             {
                 item: 'Automate Spotify',

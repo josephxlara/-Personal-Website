@@ -10,3 +10,4 @@ export { default as Sun } from './Sun';
 export { default as Water } from './Water';
 export { default as Wrench } from './Wrench';
 export { default as Mail } from './Mail';
+export { default as LocalStorage } from './LocalStorage';

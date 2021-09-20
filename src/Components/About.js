@@ -21,8 +21,8 @@ const About = ({ lightMode }) => {
         flex-wrap: wrap;
         z-index: -1;
         background-color: ${lightMode ? 'white' : '#333333'};
-        height: 1400px;
-        @media only screen and (min-height: 1400px) {
+        height: 1500px;
+        @media only screen and (min-height: 1500px) {
             height: 100vh;
         }
     `
