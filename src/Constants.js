@@ -9,7 +9,8 @@ import {
     Typescript,
     Express,
     GitHub,
-    LinkedIn
+    LinkedIn,
+    Instagram
 } from './TechLogos';
 
 import { 
@@ -146,6 +147,11 @@ export const AboutMeInfo = [
                 item: 'GitHub',
                 link: 'https://github.com/josephxlara',
                 icon: GitHub
+            },
+            {
+                item: 'Instagram',
+                link: 'https://www.instagram.com/ferrari__lambo__r8/',
+                icon: Instagram
             },
             {
                 item: 'Mail',

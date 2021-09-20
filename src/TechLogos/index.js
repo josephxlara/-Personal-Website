@@ -9,3 +9,4 @@ export { default as Typescript } from './Typescript';
 export { default as Express } from './Express.js';
 export { default as GitHub } from './GitHub';
 export { default as LinkedIn } from './LinkedIn';
+export { default as Instagram } from './Instagram';
