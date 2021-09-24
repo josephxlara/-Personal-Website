@@ -4,7 +4,7 @@ import React from 'react';
 // Style
 import '../styles.scss'
 
-const Switch = ({ lightMode, setLightMode }) => {
+const DarkLightSwitch = ({ lightMode, setLightMode }) => {
     return (
         <div className='switchDiv'>
            <label class="switch">
@@ -15,4 +15,4 @@ const Switch = ({ lightMode, setLightMode }) => {
     )
 }
 
-export default Switch; 
+export default DarkLightSwitch; 

@@ -10,7 +10,9 @@ import {
     Express,
     GitHub,
     LinkedIn,
-    Instagram
+    Instagram,
+    Illustrator,
+    Photoshop
 } from './TechLogos';
 
 import { 
@@ -139,6 +141,14 @@ export const AboutMeInfo = [
             {
                 item: 'MongoDB',
                 icon: MongoDB
+            },
+            {
+                item: 'Illustrator',
+                icon: Illustrator
+            },
+            {
+                item: 'Photoshop',
+                icon: Photoshop
             }
         ]
     },
