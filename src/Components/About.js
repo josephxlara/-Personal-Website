@@ -1,6 +1,6 @@
 // General
 import React from 'react';
-import { AboutMeInfo } from '../Constants';
+import { SoftwareEngineerInfo } from '../Constants';
 
 // Component
 import InfoSection from './InfoSections';
@@ -13,7 +13,7 @@ const About = ({ lightMode }) => {
         <>
             <div className='informationContainer'>
                 {
-                    AboutMeInfo.map(section => {
+                    SoftwareEngineerInfo.map(section => {
                         return <InfoSection section={section} lightMode={lightMode}  />
                     })
                 }

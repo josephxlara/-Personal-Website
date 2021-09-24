@@ -30,7 +30,7 @@ import {
     Mail
 } from './FlatIcons';
 
-export const AboutMeInfo = [
+export const SoftwareEngineerInfo = [
     {
         sectionHeader: 'About',
         sectionIcon: RocketShip,
