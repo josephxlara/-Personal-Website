@@ -39,8 +39,39 @@ export const Capability = styled.p`
     margin: 0;
     margin-right: 12px;
     cursor: pointer;
-    color: ${props => props.capabilities === 1 && props.number === props.capabilities ? 'white' : props.color};
-    color: ${props => props.capabilities !== 1 && props.number === props.capabilities ? props.color1 : props.color3}
+    color: ${props => {
+        if (props.capabilities === 1) {
+            if (props.number === props.capabilities) {
+                return '#fff'
+            }
+
+            else {
+                return props.color
+            }
+        }
+
+        else {
+            if (props.lightMode) {
+                if (props.capabilities === props.number) {
+                    return '#333333'
+                }
+
+                else {
+                    return '#dedede'
+                }
+            }
+
+            else {
+                if (props.capabilities === props.number) {
+                    return '#fff'
+                }
+
+                else {
+                    return '#4a4a4a'
+                }
+            }
+        }
+    }}
 `
 
 export const SourceButton = styled.div`
