@@ -13,7 +13,7 @@ import {
     Instagram,
     Illustrator,
     Photoshop
-} from './TechLogos';
+} from '../TechLogos';
 
 import { 
     Arrow, 
@@ -28,7 +28,7 @@ import {
     Wrench,
     LocalStorage,
     Mail
-} from './FlatIcons';
+} from '../FlatIcons';
 
 export const SoftwareEngineerInfo = [
     {

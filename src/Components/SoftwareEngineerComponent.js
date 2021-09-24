@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const AboutSection = ({ section, lightMode }) => {
+const SoftwareEngineerComponent = ({ section, lightMode }) => {
     const SectionHeader = styled.h1`
         color: ${lightMode ? '#333333' : 'white'};
         margin: 0;
@@ -58,4 +58,4 @@ const AboutSection = ({ section, lightMode }) => {
     )
 }
 
-export default AboutSection;
+export default SoftwareEngineerComponent;

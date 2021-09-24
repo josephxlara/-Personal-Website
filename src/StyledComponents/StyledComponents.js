@@ -104,3 +104,20 @@ export const SourceButton = styled.div`
     z-index: 999;
     }
 `
+
+export const InformationContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin-top: ${props => {
+        if (props.capabilities === 1) {
+            return '440px'
+        }
+
+        else {
+            return '120px'
+        }
+    }};
+    max-width: 600px;
+`
