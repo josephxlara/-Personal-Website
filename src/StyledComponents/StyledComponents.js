@@ -1,5 +1,4 @@
 // General
-import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 export const ContainerForSoftwareEngineer = styled.div`
@@ -22,8 +21,8 @@ export const ContainerForPhotographer = styled.div`
     flex-wrap: wrap;
     z-index: -999;
     background-color: ${props => props.lightMode ? 'white' : '#333333'};
-    height: 4400px;
-    @media only screen and (min-height: 4400px) {
+    height: 5300px;
+    @media only screen and (min-height: 5300px) {
         height: 100vh;
     }
 `
