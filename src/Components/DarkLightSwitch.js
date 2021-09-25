@@ -7,9 +7,9 @@ import '../styles.scss'
 const DarkLightSwitch = ({ lightMode, setLightMode }) => {
     return (
         <div className='switchDiv'>
-           <label class="switch">
+           <label className="switch">
                 <input type="checkbox" onClick={() => setLightMode(!lightMode)} />
-                <span class="slider round"></span>
+                <span className="slider round"></span>
             </label>
         </div>
     )

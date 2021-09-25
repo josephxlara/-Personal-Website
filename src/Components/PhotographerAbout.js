@@ -1,6 +1,6 @@
 // General
 import React from 'react';
-import { PhotographerInfo } from '../Constants/PhotographerConstant';
+import { Photographer } from '../Constants/Photographer';
 
 // Styled Components
 import { InformationContainer } from '../StyledComponents/StyledComponents';
@@ -8,13 +8,16 @@ import { InformationContainer } from '../StyledComponents/StyledComponents';
 // Style
 import '../styles.scss';
 
-const PhotographerAbout = ({ capabilities }) => {
+const PhotographerAbout = ({ capabilities, lightMode }) => {
     return (
-        <InformationContainer capabilities={capabilities}>
+        <InformationContainer lightMode={lightMode} capabilities={capabilities}>
             {
-                PhotographerInfo.map(section => {
+                Photographer.map(section => {
                     return (
-                        <img src={section.image} />
+                        <>
+                            <img alt="Joseph Lara" src={section.image} />
+                            <p >{section.caption}</p>
+                        </>
                     )
                 })
             }

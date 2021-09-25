@@ -1,7 +1,8 @@
 // General
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContainerForSoftwareEngineer = styled.div`
     width: 100%;
     justify-content: center;
     display: flex;
@@ -14,6 +15,32 @@ export const Container = styled.div`
     }
 `
 
+export const ContainerForPhotographer = styled.div`
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -999;
+    background-color: ${props => props.lightMode ? 'white' : '#333333'};
+    height: 4400px;
+    @media only screen and (min-height: 4400px) {
+        height: 100vh;
+    }
+`
+
+export const ContainerForDesigner = styled.div`
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -999;
+    background-color: ${props => props.lightMode ? 'white' : '#333333'};
+    height: 1560px;
+    @media only screen and (min-height: 1560px) {
+        height: 100vh;
+    }
+`
+    
 export const Header = styled.div`
     display: flex;
     align-items: center;
@@ -109,7 +136,12 @@ export const InformationContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: ${props => {
+        if (props.capabilities === 1) {
+            return '400px'
+        }
+    }}
+    background-color: red;
     margin-top: ${props => {
         if (props.capabilities === 1) {
             return '440px'
@@ -120,4 +152,16 @@ export const InformationContainer = styled.div`
         }
     }};
     max-width: 600px;
+    img {
+        display: flex;
+        width: 320px;
+        margin-bottom: -16px;
+    }
+    p {
+        font-weight: 600;
+        font-size: 1.2rem;
+        align-self: flex-start;
+        margin-bottom: 64px;
+        color: ${props => props.lightMode ? '#333333' : 'white'}
+    }
 `

@@ -1,8 +1,15 @@
 // General
 import React from 'react';
+import { SoftwareEngineer } from '../Constants/SoftwareEngineer';
 import styled from 'styled-components';
 
-const SoftwareEngineerComponent = ({ section, lightMode }) => {
+// Styled Components
+import { InformationContainer } from '../StyledComponents/StyledComponents';
+
+// Style
+import '../styles.scss';
+
+const SoftwareEngineerAbout = ({ section, lightMode }) => {
     const SectionHeader = styled.h1`
         color: ${lightMode ? '#333333' : 'white'};
         margin: 0;
@@ -58,4 +65,16 @@ const SoftwareEngineerComponent = ({ section, lightMode }) => {
     )
 }
 
-export default SoftwareEngineerComponent;
+const AboutSoftwareEngineer = ({ lightMode, capabilities }) => {
+    return (
+        <InformationContainer capabilities={capabilities}>
+            {
+                SoftwareEngineer.map(section => {
+                    return <SoftwareEngineerAbout section={section} lightMode={lightMode}  />
+                })
+            }
+        </InformationContainer>
+    )
+}
+
+export default AboutSoftwareEngineer;
