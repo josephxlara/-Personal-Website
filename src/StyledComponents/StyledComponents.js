@@ -34,8 +34,8 @@ export const ContainerForDesigner = styled.div`
     flex-wrap: wrap;
     z-index: -999;
     background-color: ${props => props.lightMode ? 'white' : '#333333'};
-    height: 5900px;
-    @media only screen and (min-height: 5900px) {
+    height: 5720px;
+    @media only screen and (min-height: 5720px) {
         height: 100vh;
     }
 `

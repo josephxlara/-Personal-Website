@@ -17,7 +17,7 @@ const DesignerAbout = ({ capabilities, lightMode }) => {
                 Designer.map(section => {
                     return (
                         <>
-                            <section.image width={'100%'} />
+                            <section.image lightMode={lightMode} width={'100%'} />
                             <p >{section.caption}</p>
                         </>
                     )
