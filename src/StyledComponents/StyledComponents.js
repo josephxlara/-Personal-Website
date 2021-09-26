@@ -15,7 +15,7 @@ export const ContainerForSoftwareEngineer = styled.div`
 `
 
 export const ContainerForPhotographer = styled.div`
-    width: 100%;
+    width: 10040
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -34,8 +34,8 @@ export const ContainerForDesigner = styled.div`
     flex-wrap: wrap;
     z-index: -999;
     background-color: ${props => props.lightMode ? 'white' : '#333333'};
-    height: 1560px;
-    @media only screen and (min-height: 1560px) {
+    height: 5400px;
+    @media only screen and (min-height: 5400px) {
         height: 100vh;
     }
 `
@@ -154,7 +154,15 @@ export const InformationContainer = styled.div`
     img {
         display: flex;
         width: 320px;
-        margin-bottom: -16px;
+        margin-bottom: ${props => {
+            if (props.isDesigner) {
+                return '4px;'
+            }
+
+            else {
+                return '-12px';
+            }
+        }}
     }
     p {
         font-weight: 600;

@@ -15,6 +15,7 @@ import DarkLightSwitch from './Components/DarkLightSwitch';
 import CapabilitiesHeader from './Components/CapabilitiesHeader';
 import SRCButton from './Components/SRCButton';
 import PhotographerAbout from './Components/PhotographerAbout';
+import DesignerAbout from './Components/DesignerAbout';
 
 // Style
 import './styles.scss';
@@ -31,6 +32,7 @@ const App = () => {
         <CapabilitiesHeader capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />
         {capabilities === 1 && <SoftwareEngineerAbout capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />}
         {capabilities === 2 && <PhotographerAbout capabilities={capabilities} lightMode={lightMode} />}
+        {capabilities === 3 && <DesignerAbout capabilities={capabilities} lightMode={lightMode} />}
         <DarkLightSwitch lightMode={lightMode} setLightMode={setLightMode} />
       </ContainerForSoftwareEngineer>
     )
@@ -44,6 +46,7 @@ const App = () => {
         <CapabilitiesHeader capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />
         {capabilities === 1 && <SoftwareEngineerAbout capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />}
         {capabilities === 2 && <PhotographerAbout capabilities={capabilities} lightMode={lightMode} />}
+        {capabilities === 3 && <DesignerAbout capabilities={capabilities} lightMode={lightMode} />}
         <DarkLightSwitch lightMode={lightMode} setLightMode={setLightMode} />
       </ContainerForPhotographer>
     )
@@ -57,6 +60,7 @@ const App = () => {
         <CapabilitiesHeader capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />
         {capabilities === 1 && <SoftwareEngineerAbout capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />}
         {capabilities === 2 && <PhotographerAbout capabilities={capabilities} lightMode={lightMode} />}
+        {capabilities === 3 && <DesignerAbout capabilities={capabilities} lightMode={lightMode} />}
         <DarkLightSwitch lightMode={lightMode} setLightMode={setLightMode} />
       </ContainerForDesigner>
     )

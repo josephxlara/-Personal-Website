@@ -1,49 +1,49 @@
 // Photographs
 import HollywoodSign from '../Photographs/Hollywood Sign.jpg';
-import PalmTree from '../Photographs/Palm Tree.jpg';
-import PalmTrees3 from '../Photographs/Palm Trees pt.3.jpg';
-import PalmTrees2 from '../Photographs/Palm Trees pt.2.jpg';
 import PalmTrees from '../Photographs/Palm Trees.jpg';
-import Streets from '../Photographs/Streets.jpg';
-import TheHills from '../Photographs/The Hills.jpg';
-import LosAngeles from '../Photographs/Los Angeles.jpg';
+import PalmTrees2 from '../Photographs/Palm Trees pt.2.jpg';
+import PalmTrees3 from '../Photographs/Palm Trees pt.3.jpg';
+import PalmTree from '../Photographs/Palm Tree.jpg';
+import Downtown from '../Photographs/Downtown.jpg';
+import CloseToRunyon from '../Photographs/CloseToRunyon.jpg';
+import TakenOnRunyonCanyon from '../Photographs/TakenOnRunyonCanyon.jpg';
 import TheSpeedOfLight from '../Photographs/Light Speed.jpg';
 
 export const Photographer = [
     {
         image: HollywoodSign,
-        caption: 'Hollywood Dreaming'
+        caption: 'Hollywood Dreaming',
     },
     {
         image: PalmTrees,
-        caption: 'Palm Trees'
+        caption: 'Palm Trees',
     },
     {
         image: PalmTrees2,
-        caption: 'Palm Trees pt.2'
+        caption: 'Palm Trees pt.2',
     },
     {
         image: PalmTrees3,
-        caption: 'Palm Trees pt.3'
+        caption: 'Palm Trees pt.3',
     },
     {
         image: PalmTree,
-        caption: 'I forgot how I edited this'
+        caption: 'I forgot how I achieved this edit',
     },
     {
-        image: LosAngeles,
-        caption: 'DOWNTOWN'
+        image: Downtown,
+        caption: 'Downtown',
     },
     {
-        image: Streets,
+        image: CloseToRunyon,
         caption: 'Somewhere close to Runyon',
     },
     {
-        image: TheHills,
-        caption: 'I will live on a hill'
+        image: TakenOnRunyonCanyon,
+        caption: 'Taken on Runyon Canyon',
     },
     {
         image: TheSpeedOfLight,
-        caption: 'The Speed of Light'
+        caption: 'The Speed of Light',
     }
 ]
