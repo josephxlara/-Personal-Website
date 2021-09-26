@@ -15,14 +15,14 @@ export const ContainerForSoftwareEngineer = styled.div`
 `
 
 export const ContainerForPhotographer = styled.div`
-    width: 10040
+    width: 100%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     z-index: -999;
     background-color: ${props => props.lightMode ? 'white' : '#333333'};
-    height: 5300px;
-    @media only screen and (min-height: 5300px) {
+    height: 5900px;
+    @media only screen and (min-height: 5900px) {
         height: 100vh;
     }
 `
@@ -34,8 +34,8 @@ export const ContainerForDesigner = styled.div`
     flex-wrap: wrap;
     z-index: -999;
     background-color: ${props => props.lightMode ? 'white' : '#333333'};
-    height: 5400px;
-    @media only screen and (min-height: 5400px) {
+    height: 5900px;
+    @media only screen and (min-height: 5900px) {
         height: 100vh;
     }
 `
@@ -153,7 +153,7 @@ export const InformationContainer = styled.div`
     max-width: 600px;
     img {
         display: flex;
-        width: 320px;
+        width: 360px;
         margin-bottom: ${props => {
             if (props.isDesigner) {
                 return '4px;'

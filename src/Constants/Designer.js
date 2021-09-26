@@ -1,22 +1,24 @@
 // Photographs
-import Luxor1 from '../PNGsForDesigner/Luxor 1.png';
-import Luxor2 from '../PNGsForDesigner/Luxor 2.png';
-import BusinessCard from '../PNGsForDesigner/Business Card 1.png';
-import BusinessCard2 from '../PNGsForDesigner/Business Card 2.png';
-import Ad from '../PNGsForDesigner/Ad.png';
-import Bespoke from '../PNGsForDesigner/Bespoke.png';
-import GPS from '../PNGsForDesigner/GPS.png';
-import Brochure from '../PNGsForDesigner/GPS Brochure.png';
-import Pantry from '../PNGsForDesigner/Pantry.io.png';
-import PantryIcons from '../PNGsForDesigner/Pantry Icons.png';
-import OppositeEndsLogo from '../PNGsForDesigner/OppositeEndsLogo.png';
-import OppositeEndsCursive from '../PNGsForDesigner/OECursive.png';
-import IntoTheUniverse from '../PNGsForDesigner/IntoTheUniverse.png';
-import IG from '../PNGsForDesigner/OppositeEndsIG.png'
+import { 
+    TNOEvents,
+    PantryLogo,
+    PantryIcons,
+    OppositeEnds,
+    LuxorLogo1,
+    LuxorLogo2,
+    BBSBMGBusinessCard,
+    BBSLogo,
+    GPSAd,
+    GPSLogo,
+} from '../SVGsForDesigner'
 
 export const Designer = [
     {
-        image: Pantry,
+        image: TNOEvents,
+        caption: 'Freelance, 2021'
+    },
+    {
+        image: PantryLogo,
         caption: 'Pantry.io Logo, 2021'
     },
     {
@@ -24,51 +26,31 @@ export const Designer = [
         caption: 'Pantry.io Icons, 2021'
     },
     {
-        image: OppositeEndsLogo,
+        image: OppositeEnds,
         caption: 'Opposite Ends, 2019',
     },
     {
-        image: IG,
-        caption: 'Opposite Ends Instagram, 2019',
+        image: LuxorLogo1,
+        caption: 'Freelance, 2019',
     },
     {
-        image: OppositeEndsCursive,
-        caption: 'Opposite Ends, 2019',
+        image: LuxorLogo2,
+        caption: 'Freelance, 2019'
     },
     {
-        image: IntoTheUniverse,
-        caption: 'Opposite Ends, 2019',
-    },
-    {
-        image: Luxor1,
-        caption: 'For Luxor Automotive, 2019',
-    },
-    {
-        image: Luxor2,
-        caption: 'For Luxor Automotive, 2019'
-    },
-    {
-        image: BusinessCard,
+        image: BBSBMGBusinessCard,
         caption: 'Graphic Design Internship, 2019'
     },
     {
-        image: BusinessCard2,
+        image: BBSLogo,
         caption: 'Graphic Design Internship, 2019'
     },
     {
-        image: Ad,
+        image: GPSAd,
         caption: '(Ad) Graphic Design Internship, 2019'
     },
     {
-        image: Bespoke,
-        caption: 'Graphic Design Internship, 2019'
-    },
-    {
-        image: GPS,
-        caption: 'Graphic Design Internship, 2019'
-    },
-    {
-        image: Brochure,
+        image: GPSLogo,
         caption: 'Graphic Design Internship, 2019'
     },
 ]

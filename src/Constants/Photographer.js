@@ -1,49 +1,49 @@
 // Photographs
-import HollywoodSign from '../Photographs/Hollywood Sign.jpg';
+import HollywoodSign from '../Photographs/HollywoodSign.jpg';
 import PalmTrees from '../Photographs/Palm Trees.jpg';
 import PalmTrees2 from '../Photographs/Palm Trees pt.2.jpg';
 import PalmTrees3 from '../Photographs/Palm Trees pt.3.jpg';
 import PalmTree from '../Photographs/Palm Tree.jpg';
-import Downtown from '../Photographs/Downtown.jpg';
-import CloseToRunyon from '../Photographs/CloseToRunyon.jpg';
-import TakenOnRunyonCanyon from '../Photographs/TakenOnRunyonCanyon.jpg';
-import TheSpeedOfLight from '../Photographs/Light Speed.jpg';
+import DowntownLA from '../Photographs/DowntownLA.jpg';
+import AStreetInLA from '../Photographs/AStreetInLA.jpg';
+import Hillside from '../Photographs/Hillside.jpg';
+import TheSpeedOfLight from '../Photographs/TheSpeedOfLight.jpg';
 
 export const Photographer = [
     {
         image: HollywoodSign,
-        caption: 'Hollywood Dreaming',
+        caption: 'Hollywood Sign, 2017',
     },
     {
         image: PalmTrees,
-        caption: 'Palm Trees',
+        caption: 'Palm Trees in LA, 2017',
     },
     {
         image: PalmTrees2,
-        caption: 'Palm Trees pt.2',
+        caption: 'Palm Trees in LA pt.2, 2017',
     },
     {
         image: PalmTrees3,
-        caption: 'Palm Trees pt.3',
+        caption: 'Palm Trees in LA pt.3, 2017',
     },
     {
         image: PalmTree,
-        caption: 'I forgot how I achieved this edit',
+        caption: 'Palm Tree in LA, 2017',
     },
     {
-        image: Downtown,
-        caption: 'Downtown',
+        image: DowntownLA,
+        caption: 'Downtown LA, 2017',
     },
     {
-        image: CloseToRunyon,
-        caption: 'Somewhere close to Runyon',
+        image: AStreetInLA,
+        caption: 'A Street in LA, 2017',
     },
     {
-        image: TakenOnRunyonCanyon,
-        caption: 'Taken on Runyon Canyon',
+        image: Hillside,
+        caption: 'Hillside, 2017',
     },
     {
         image: TheSpeedOfLight,
-        caption: 'The Speed of Light',
+        caption: 'The Speed of Light, 2017',
     }
 ]

@@ -17,7 +17,7 @@ const DesignerAbout = ({ capabilities, lightMode }) => {
                 Designer.map(section => {
                     return (
                         <>
-                            <img alt="Joseph Lara" src={section.image} />
+                            <section.image width={'100%'} />
                             <p >{section.caption}</p>
                         </>
                     )
