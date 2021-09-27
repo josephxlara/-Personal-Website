@@ -4,8 +4,7 @@ import {
     PantryLogo,
     PantryIcons,
     OppositeEnds,
-    LuxorLogo1,
-    LuxorLogo2,
+    Luxor,
     BBSBMGBusinessCard,
     BBSLogo,
     GPSAd,
@@ -26,16 +25,8 @@ export const Designer = [
         caption: 'Pantry.io Icons, 2021'
     },
     {
-        image: OppositeEnds,
-        caption: 'Opposite Ends, 2019',
-    },
-    {
-        image: LuxorLogo1,
+        image: Luxor,
         caption: 'Freelance, 2019',
-    },
-    {
-        image: LuxorLogo2,
-        caption: 'Freelance, 2019'
     },
     {
         image: BBSBMGBusinessCard,
@@ -52,5 +43,9 @@ export const Designer = [
     {
         image: GPSLogo,
         caption: 'Graphic Design Internship, 2019'
+    },
+    {
+        image: OppositeEnds,
+        caption: 'Opposite Ends, 2018',
     },
 ]

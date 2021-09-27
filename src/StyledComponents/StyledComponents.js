@@ -1,45 +1,43 @@
 // General
 import styled from 'styled-components';
 
-export const ContainerForSoftwareEngineer = styled.div`
+export const Container = styled.div`
     width: 100%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     z-index: -999;
     background-color: ${props => props.lightMode ? 'white' : '#333333'};
-    height: 1560px;
-    @media only screen and (min-height: 1560px) {
+    @media only screen and (min-height: ${props => {
+        if (props.capabilities === 1) {
+            return '1560px'
+        }
+
+        if (props.capabilities === 2) {
+            return '5900px'
+        }
+
+        if (props.capabilities ==3) {
+            return '6200px'
+        }
+    }}) {
         height: 100vh;
     }
+    height: ${props => {
+        if (props.capabilities === 1) {
+            return '1560px'
+        }
+
+        if (props.capabilities === 2) {
+            return '5900px'
+        }
+
+        else {
+            return '6200px'
+        }
+    }}
 `
 
-export const ContainerForPhotographer = styled.div`
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: -999;
-    background-color: ${props => props.lightMode ? 'white' : '#333333'};
-    height: 5900px;
-    @media only screen and (min-height: 5900px) {
-        height: 100vh;
-    }
-`
-
-export const ContainerForDesigner = styled.div`
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: -999;
-    background-color: ${props => props.lightMode ? 'white' : '#333333'};
-    height: 5720px;
-    @media only screen and (min-height: 5720px) {
-        height: 100vh;
-    }
-`
-    
 export const Header = styled.div`
     display: flex;
     align-items: center;
@@ -168,7 +166,15 @@ export const InformationContainer = styled.div`
         font-weight: 600;
         font-size: 1.2rem;
         align-self: flex-start;
-        margin-bottom: 64px;
+        margin-bottom: ${props => {
+            if (props.isDesigner) {
+                return '128px'
+            }
+
+            else {
+                return '64px'
+            }
+        }};
         color: ${props => props.lightMode ? '#333333' : 'white'}
     }
 `

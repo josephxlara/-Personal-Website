@@ -9,15 +9,7 @@ import { InformationContainer } from '../StyledComponents/StyledComponents';
 // Style
 import '../styles.scss';
 
-const SoftwareEngineerAbout = ({ section, lightMode }) => {
-    const SectionHeader = styled.h1`
-        color: ${lightMode ? '#333333' : 'white'};
-        margin: 0;
-        font-weight: 500;
-        font-size: 24px;
-        margin-bottom: 8px;
-    `
-    
+const SoftwareEngineerAbout = ({ section, SectionHeader, lightMode, idx }) => {
     return (
         <div className='sectionDiv'>
             <section.sectionIcon className='sectionIcon' alt={60} height={60} />
@@ -66,11 +58,19 @@ const SoftwareEngineerAbout = ({ section, lightMode }) => {
 }
 
 const AboutSoftwareEngineer = ({ lightMode, capabilities }) => {
+    const SectionHeader = styled.h1`
+        color: ${lightMode ? '#333333' : 'white'};
+        margin: 0;
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 8px;
+    `
+    
     return (
         <InformationContainer capabilities={capabilities}>
             {
                 SoftwareEngineer.map(section => {
-                    return <SoftwareEngineerAbout section={section} lightMode={lightMode}  />
+                    return <SoftwareEngineerAbout key={section.sectionHeader} SectionHeader={SectionHeader} section={section} lightMode={lightMode}  />
                 })
             }
         </InformationContainer>

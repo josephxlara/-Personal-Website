@@ -1,5 +1,5 @@
 // General
-import React, { useState } from 'react';
+import React from 'react';
 import { Designer } from '../Constants/Designer';
 
 // Styled Components
@@ -9,7 +9,7 @@ import { InformationContainer } from '../StyledComponents/StyledComponents';
 import '../styles.scss';
 
 const DesignerAbout = ({ capabilities, lightMode }) => {
-    const [isDesigner, setIsDesigner] = useState(true);
+    const isDesigner = true;
 
     return (
         <InformationContainer isDesigner={isDesigner} lightMode={lightMode} capabilities={capabilities}>

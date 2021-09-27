@@ -3,9 +3,7 @@ import React, { useState } from 'react';
 
 // Styled Components
 import { 
-  ContainerForSoftwareEngineer, 
-  ContainerForPhotographer,
-  ContainerForDesigner
+  Container,
 } from './StyledComponents/StyledComponents';
 
 // Components
@@ -24,9 +22,8 @@ const App = () => {
   const [lightMode, setLightMode] = useState(false);
   const [capabilities, setCapabilities] = useState(1);
 
-  if (capabilities === 1) {
     return (
-      <ContainerForSoftwareEngineer capabilities={capabilities} lightMode={lightMode}>
+      <Container capabilities={capabilities} lightMode={lightMode}>
         {capabilities === 1 && <Gradient lightMode={lightMode} />}
         <SRCButton />
         <CapabilitiesHeader capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />
@@ -34,37 +31,8 @@ const App = () => {
         {capabilities === 2 && <PhotographerAbout capabilities={capabilities} lightMode={lightMode} />}
         {capabilities === 3 && <DesignerAbout capabilities={capabilities} lightMode={lightMode} />}
         <DarkLightSwitch lightMode={lightMode} setLightMode={setLightMode} />
-      </ContainerForSoftwareEngineer>
+      </Container>
     )
-  }
-
-  if (capabilities === 2) {
-    return (
-      <ContainerForPhotographer capabilities={capabilities} lightMode={lightMode}>
-        {capabilities === 1 && <Gradient lightMode={lightMode} />}
-        <SRCButton />
-        <CapabilitiesHeader capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />
-        {capabilities === 1 && <SoftwareEngineerAbout capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />}
-        {capabilities === 2 && <PhotographerAbout capabilities={capabilities} lightMode={lightMode} />}
-        {capabilities === 3 && <DesignerAbout capabilities={capabilities} lightMode={lightMode} />}
-        <DarkLightSwitch lightMode={lightMode} setLightMode={setLightMode} />
-      </ContainerForPhotographer>
-    )
-  }
-
-  if (capabilities === 3) {
-    return (
-      <ContainerForDesigner capabilities={capabilities} lightMode={lightMode}>
-        {capabilities === 1 && <Gradient lightMode={lightMode} />}
-        <SRCButton />
-        <CapabilitiesHeader capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />
-        {capabilities === 1 && <SoftwareEngineerAbout capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />}
-        {capabilities === 2 && <PhotographerAbout capabilities={capabilities} lightMode={lightMode} />}
-        {capabilities === 3 && <DesignerAbout capabilities={capabilities} lightMode={lightMode} />}
-        <DarkLightSwitch lightMode={lightMode} setLightMode={setLightMode} />
-      </ContainerForDesigner>
-    )
-  }
 }
 
 export default App;
