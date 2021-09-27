@@ -25,12 +25,12 @@ const App = () => {
     return (
       <Container capabilities={capabilities} lightMode={lightMode}>
         {capabilities === 1 && <Gradient lightMode={lightMode} />}
-        <SRCButton />
+        <SRCButton capabilities={capabilities} />
         <CapabilitiesHeader capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />
         {capabilities === 1 && <SoftwareEngineerAbout capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />}
         {capabilities === 2 && <PhotographerAbout capabilities={capabilities} lightMode={lightMode} />}
         {capabilities === 3 && <DesignerAbout capabilities={capabilities} lightMode={lightMode} />}
-        <DarkLightSwitch lightMode={lightMode} setLightMode={setLightMode} />
+        <DarkLightSwitch capabilities={capabilities} lightMode={lightMode} setLightMode={setLightMode} />
       </Container>
     )
 }

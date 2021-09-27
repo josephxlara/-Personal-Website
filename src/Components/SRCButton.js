@@ -4,9 +4,9 @@ import React from 'react';
 // Styled Components
 import { SourceButton } from '../StyledComponents/StyledComponents';
 
-const SRCButton = () => {
+const SRCButton = ({ capabilities }) => {
     return (
-        <SourceButton>
+        <SourceButton capabilities={capabilities}>
             <a 
                 href='https://github.com/josephxlara/-Personal-Website' 
                 alt='blankLink' 

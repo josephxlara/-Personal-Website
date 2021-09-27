@@ -16,19 +16,19 @@ export const Photographer = [
     },
     {
         image: PalmTrees,
-        caption: 'Palm Trees in LA, 2017',
+        caption: 'Palm Trees, 2017',
     },
     {
         image: PalmTrees2,
-        caption: 'Palm Trees in LA pt.2, 2017',
+        caption: 'Palm Trees pt.2, 2017',
     },
     {
         image: PalmTrees3,
-        caption: 'Palm Trees in LA pt.3, 2017',
+        caption: 'Palm Trees pt.3, 2017',
     },
     {
         image: PalmTree,
-        caption: 'Palm Tree in LA, 2017',
+        caption: 'Palm Tree, 2017',
     },
     {
         image: DowntownLA,
@@ -36,11 +36,11 @@ export const Photographer = [
     },
     {
         image: AStreetInLA,
-        caption: 'A Street in LA, 2017',
+        caption: 'The Streets, 2017',
     },
     {
         image: Hillside,
-        caption: 'Hillside, 2017',
+        caption: 'Somewhere In The Hills, 2017',
     },
     {
         image: TheSpeedOfLight,

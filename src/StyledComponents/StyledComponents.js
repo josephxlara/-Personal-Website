@@ -17,7 +17,7 @@ export const Container = styled.div`
             return '5900px'
         }
 
-        if (props.capabilities ==3) {
+        if (props.capabilities === 3) {
             return '6200px'
         }
     }}) {
@@ -36,6 +36,25 @@ export const Container = styled.div`
             return '6200px'
         }
     }}
+`
+
+export const SwitchDiv = styled.div`
+    position: ${props => {
+        if (props.capabilities === 3) {
+            return 'fixed';
+        }
+
+        else {
+            return 'absolute';
+        }
+    }}};
+    width: 60px;
+    height: 34px;
+    top: 0;
+    right: 0;
+    margin-right: 12px;
+    margin-top: 12px;
+    z-index: 999;
 `
 
 export const Header = styled.div`
