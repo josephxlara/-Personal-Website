@@ -6,34 +6,35 @@ export const Container = styled.div`
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    background-color: red;
     z-index: -999;
     background-color: ${props => props.lightMode ? 'white' : '#333333'};
     @media only screen and (min-height: ${props => {
         if (props.capabilities === 1) {
-            return '1560px'
+            return '1560px';
         }
 
         if (props.capabilities === 2) {
-            return '5900px'
+            return '5320px';
         }
 
         if (props.capabilities === 3) {
-            return '6200px'
+            return '6100px';
         }
     }}) {
         height: 100vh;
-    }
+    };
     height: ${props => {
         if (props.capabilities === 1) {
-            return '1560px'
+            return '1560px';
         }
 
         if (props.capabilities === 2) {
-            return '5900px'
+            return '5320px';
         }
 
         else {
-            return '6200px'
+            return '6100px';
         }
     }}
 `
@@ -152,38 +153,24 @@ export const InformationContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: ${props => {
-        if (props.capabilities === 1) {
-            return '400px'
-        }
-    }}
-    background-color: red;
+    width: 320px;
+    }};
     margin-top: ${props => {
         if (props.capabilities === 1) {
             return '440px'
         }
-
-        else {
-            return '120px'
-        }
+        
+        return '120px'
     }};
     max-width: 600px;
     img {
         display: flex;
-        width: 360px;
-        margin-bottom: ${props => {
-            if (props.isDesigner) {
-                return '4px;'
-            }
-
-            else {
-                return '-12px';
-            }
-        }}
-    }
+        width: 100%;
+        margin-bottom: -12px;
+    };
     p {
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1rem;
         align-self: flex-start;
         margin-bottom: ${props => {
             if (props.isDesigner) {
