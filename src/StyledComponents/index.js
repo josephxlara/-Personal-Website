@@ -18,7 +18,7 @@ export const Container = styled.div`
         }
 
         if (props.capabilities === 3) {
-            return '6100px';
+            return '6200px';
         }
     }}) {
         height: 100vh;
@@ -33,9 +33,9 @@ export const Container = styled.div`
         }
 
         else {
-            return '6100px';
+            return '6200px';
         }
-    }}
+    }};
 `
 
 export const SwitchDiv = styled.div`
@@ -141,6 +141,41 @@ export const SourceButton = styled.div`
 `
 
 export const InformationContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    margin-top: ${props => {
+        if (props.capabilities === 1) {
+            return '440px'
+        }
+        
+        return '120px'
+    }};
+    max-width: 600px;
+    img {
+        display: flex;
+        width: 100%;
+        margin-bottom: -12px;
+    };
+    p {
+        font-weight: 600;
+        font-size: 1rem;
+        align-self: flex-start;
+        margin-bottom: ${props => {
+            if (props.isDesigner) {
+                return '128px'
+            }
+
+            else {
+                return '64px'
+            }
+        }};
+        color: ${props => props.lightMode ? '#333333' : 'white'}
+    }
+`
+
+export const InformationContainerDesigner = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
