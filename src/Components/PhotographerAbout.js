@@ -3,26 +3,26 @@ import React from 'react';
 import { Photographer } from '../Constants/Photographer';
 
 // Styled Components
-import { InformationContainer } from '../StyledComponents/';
+import { AboutContainer } from '../StyledComponents/';
 
 // Style
 import '../styles.scss';
 
 const PhotographerAbout = ({ capabilities, lightMode }) => {
     return (
-        <InformationContainer lightMode={lightMode} capabilities={capabilities}>
+        <AboutContainer lightMode={lightMode} capabilities={capabilities}>
             {
                 Photographer.map(section => {
                     return (
-                        <>
+                        <div >
                             <img alt="Joseph Lara" src={section.image} />
-                            <p >{section.caption}</p>
-                        </>
+                            <p >{section.caption}</p> 
+                        </div>
                     )
                 })
             }
-        </InformationContainer>
-)
+        </AboutContainer>
+    )
 }
 
 export default PhotographerAbout;

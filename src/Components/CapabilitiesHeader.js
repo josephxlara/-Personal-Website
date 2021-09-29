@@ -2,11 +2,14 @@
 import React from 'react';
 
 // Styled Components
-import { Header, Capability } from '../StyledComponents/';
+import { 
+    CapabilitiesHeaderContainer, 
+    Capability 
+} from '../StyledComponents/';
 
 const CapabilitiesHeader = ({ lightMode, capabilities, setCapabilities }) => {
     return (
-        <Header>
+        <CapabilitiesHeaderContainer>
             <Capability lightMode={lightMode} capabilities={capabilities} color={lightMode ? '#ffae59' : '#b191ff'} number={1} onClick={() => setCapabilities(1)}>
                 Software Engineer
             </Capability>
@@ -16,7 +19,7 @@ const CapabilitiesHeader = ({ lightMode, capabilities, setCapabilities }) => {
             <Capability lightMode={lightMode} capabilities={capabilities} color={lightMode ? '#ffae59' : '#b191ff'} number={3} onClick={() => setCapabilities(3)}>
                 Designer
             </Capability>
-        </Header>
+        </CapabilitiesHeaderContainer>
     )
 }
 

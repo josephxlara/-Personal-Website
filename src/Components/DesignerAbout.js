@@ -3,7 +3,7 @@ import React from 'react';
 import { Designer } from '../Constants/Designer';
 
 // Styled Components
-import { InformationContainerDesigner } from '../StyledComponents/';
+import { AboutContainerDesigner } from '../StyledComponents/';
 
 // Style
 import '../styles.scss';
@@ -12,7 +12,7 @@ const DesignerAbout = ({ capabilities, lightMode }) => {
     const isDesigner = true;
 
     return (
-        <InformationContainerDesigner isDesigner={isDesigner} lightMode={lightMode} capabilities={capabilities}>
+        <AboutContainerDesigner isDesigner={isDesigner} lightMode={lightMode} capabilities={capabilities}>
             {
                 Designer.map(section => {
                     return (
@@ -27,8 +27,8 @@ const DesignerAbout = ({ capabilities, lightMode }) => {
                     )
                 })
             }
-        </InformationContainerDesigner>
-)
+        </AboutContainerDesigner>
+    )
 }
 
 export default DesignerAbout;

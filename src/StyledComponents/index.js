@@ -14,7 +14,7 @@ export const Container = styled.div`
         }
 
         if (props.capabilities === 2) {
-            return '5320px';
+            return '5300px';
         }
 
         if (props.capabilities === 3) {
@@ -29,7 +29,7 @@ export const Container = styled.div`
         }
 
         if (props.capabilities === 2) {
-            return '5320px';
+            return '5300px';
         }
 
         else {
@@ -38,7 +38,40 @@ export const Container = styled.div`
     }};
 `
 
-export const SwitchDiv = styled.div`
+// SourceButton.js
+export const SourceButtonContainer = styled.div`
+    position: absolute;
+    padding: 0 6px 0 6px;
+    top: 0;
+    right: 0;
+    margin-right: 84px;
+    margin-top: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #2196F3;
+    z-index: 999;
+    :hover {
+        background-color: #208de3;
+    }
+    & > a, a:link, a:visited {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    height: 34px;
+    width: 40px;
+    margin: 0;
+    z-index: 999;
+    }
+`
+
+// DarkLightSwitch.js
+export const DarkLightSwitchContainer = styled.div`
     position: fixed;
     width: 60px;
     height: 34px;
@@ -49,7 +82,8 @@ export const SwitchDiv = styled.div`
     z-index: 999;
 `
 
-export const Header = styled.div`
+// CapabilitiesHeader.js
+export const CapabilitiesHeaderContainer = styled.div`
     display: flex;
     align-items: center;
     position: absolute;
@@ -109,38 +143,17 @@ export const Capability = styled.p`
     }}
 `
 
-export const SourceButton = styled.div`
-    position: absolute;
-    padding: 0 6px 0 6px;
-    top: 0;
-    right: 0;
-    margin-right: 84px;
-    margin-top: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background-color: #2196F3;
-    z-index: 999;
-    :hover {
-        background-color: #208de3;
-    }
-    & > a, a:link, a:visited {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    height: 34px;
-    width: 40px;
+
+// SoftwareEngineerAbout.js
+export const SectionHeader = styled.h1`
     margin: 0;
-    z-index: 999;
-    }
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: ${props => props.lightMode ? '#333333' : '#fff'}
 `
 
-export const InformationContainer = styled.div`
+export const AboutContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,10 +185,13 @@ export const InformationContainer = styled.div`
             }
         }};
         color: ${props => props.lightMode ? '#333333' : 'white'}
-    }
+    };
+    h3 {
+        color: ${props => props.lightMode ? '#333333' : 'white'}
+    };
 `
 
-export const InformationContainerDesigner = styled.div`
+export const AboutContainerDesigner = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
