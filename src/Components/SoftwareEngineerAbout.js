@@ -3,28 +3,35 @@ import React from 'react';
 import { SoftwareEngineer } from '../Constants/SoftwareEngineer';
 
 // Styled Components
-import { AboutContainer, SectionHeader } from '../StyledComponents/';
+import { 
+    AboutContainer, 
+    SectionHeader,
+    SectionContainer,
+    SectionHeaderContainer,
+    SectionBodyItem,
+    ProjectStack
+} from '../StyledComponents/';
 
 // Style
 import '../styles.scss';
 
-const AboutSoftwareEngineer = ({ lightMode, capabilities }) => {
+const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
     return (
         <AboutContainer capabilities={capabilities}>
             {
                 SoftwareEngineer.map(section => {
                     return (
-                        <div className='sectionDiv'>
-                            <section.sectionIcon className='sectionIcon' alt={60} height={60} />
-                            <div className='sectionHeader'>
+                        <SectionContainer>
+                            <section.sectionIcon style={{ marginRight: '20px' }} height={60} />
+                            <SectionHeaderContainer>
                                 <SectionHeader lightMode={lightMode}>
                                     {section.sectionHeader}
                                 </SectionHeader>
                                 {
                                     section.sectionBody.map(sectionBodyItem => {
                                         return (
-                                            <div className='sectionBodyItem'>
-                                                {sectionBodyItem.icon && <sectionBodyItem.icon lightMode={lightMode} className='itemImg' height={16} width={16} />}
+                                            <SectionBodyItem lightMode={lightMode}>
+                                                {sectionBodyItem.icon && <sectionBodyItem.icon lightMode={lightMode} style={{ marginRight: '8px', display: 'flex' }} height={16} width={16} />}
                                                 {sectionBodyItem.link 
                                                 ? 
                                                 <a 
@@ -32,29 +39,28 @@ const AboutSoftwareEngineer = ({ lightMode, capabilities }) => {
                                                     rel="noopener noreferrer" 
                                                     target="_blank" 
                                                     href={sectionBodyItem.link}
-                                                    style={{ color: lightMode ? '#333333' : '#fff'}}
                                                 >
                                                     {sectionBodyItem.item}
                                                 </a> 
                                                 : 
-                                                <h3 style={{ color: lightMode ? '#333333' : '#fff'}}>
+                                                <h3 >
                                                     {sectionBodyItem.item}
                                                 </h3>
                                                 }
-                                                <div className='projectStack'>
+                                                <ProjectStack>
                                                     {
                                                         sectionBodyItem.stack &&
                                                         sectionBodyItem.stack.map(Tech => {
                                                             return <Tech lightMode={lightMode} style={{ marginRight: '6px', display: 'flex' }} width={16} height={16} />
                                                         })
                                                     }
-                                                </div>
-                                            </div>
+                                                </ProjectStack>
+                                            </SectionBodyItem>
                                         )
                                     })
                                 }
-                            </div>
-                    </div>
+                            </SectionHeaderContainer>
+                        </SectionContainer>
                     )
                 })
             }
@@ -62,4 +68,4 @@ const AboutSoftwareEngineer = ({ lightMode, capabilities }) => {
     )
 }
 
-export default AboutSoftwareEngineer;
+export default SoftwareEngineerAbout;

@@ -4,14 +4,19 @@ import React from 'react';
 // SVG
 import GradientSVG from '../GradientSVG';
 
+// Styled Components
+import { 
+    GradientContainer
+} from '../StyledComponents/';
+
 // Style
 import '../styles.scss'
 
 const Gradient = ({ lightMode }) => {
     return (
-        <div className="gradientDiv">
-            <GradientSVG className="gradient" lightMode={lightMode} />
-        </div>
+        <GradientContainer>
+            <GradientSVG style={{ width: '100%' }} lightMode={lightMode} />
+        </GradientContainer>
     )
 }
 

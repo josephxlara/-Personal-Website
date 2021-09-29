@@ -14,11 +14,11 @@ export const Container = styled.div`
         }
 
         if (props.capabilities === 2) {
-            return '5300px';
+            return '5400px';
         }
 
         if (props.capabilities === 3) {
-            return '6200px';
+            return '6300px';
         }
     }}) {
         height: 100vh;
@@ -29,21 +29,13 @@ export const Container = styled.div`
         }
 
         if (props.capabilities === 2) {
-            return '5300px';
+            return '5400px';
         }
 
         else {
-            return '6200px';
+            return '6300px';
         }
     }};
-`
-
-export const SectionHeader = styled.h1`
-    margin: 0;
-    font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 8px;
-    color: ${props => props.lightMode ? '#333333' : '#fff'}
 `
 
 export const AboutContainer = styled.div`
@@ -62,22 +54,44 @@ export const AboutContainer = styled.div`
     img {
         display: flex;
         width: 100%;
-        margin-bottom: -8px;
+        margin-bottom: -4px;
     };
     h3 {    
+        margin: 0;
+        margin-bottom: ${props => {
+            if (props.isDesigner) {
+                return '12px'
+            }
+        }};
         font-weight: 500;
+        font-size: ${props => {
+            if (props.isDesigner) {
+                return '1.8rem';
+            }
+
+            else {
+                return '14px';
+            }
+        }};
+        display: flex;
+        align-self: ${props => {
+            if (props.isDesigner) {
+                return 'flex-start';
+            }
+        }};
+        color: ${props => {
+            if (props.lightMode) {
+                return '#333333'
+            }
+            else {
+                return '#fff'
+            }
+        }};
     };
     p {
         font-weight: 500;
         align-self: flex-start;
-        font-size: ${props => {
-            if (props.isPhotographer) {
-                return '1rem';
-            }
-            if (props.isDesigner) {
-                return '1rem';
-            }
-        }};
+        font-size: 16px;
         margin-bottom: ${props => {
             if (props.isPhotographer) {
                 return '64px'
@@ -89,6 +103,11 @@ export const AboutContainer = styled.div`
                 return '0';
             }
         }};
+        margin-top: ${props => {
+            if (props.isDesigner) {
+                return '20px';
+            }
+        }};
         color: ${props => {
             if (props.lightMode) {
                 return '#333333'
@@ -99,23 +118,8 @@ export const AboutContainer = styled.div`
             }
         }};
     };
-    h4 {
-        margin: 0;
-        margin-bottom: 12px;
-        padding: 0;
-        font-size: 1.8rem;
-        color: ${props => {
-            if (props.lightMode) {
-                return '#333333'
-            }
-            else {
-                return '#fff'
-            }
-        }};
-        align-self: flex-start;
-        font-weight: 600;
-    };
     a {
+        margin: 0;
         margin-bottom: ${props => {
             if (props.isDesigner) {
                 return '12px';
@@ -125,6 +129,8 @@ export const AboutContainer = styled.div`
                 return '0';
             }
         }};
+        font-size: 14px;
+        display: flex;
         font-weight: 500;
         color: ${props => {
             if (props.lightMode) {
@@ -222,11 +228,11 @@ export const CapabilitiesHeaderContainer = styled.div`
 export const Capability = styled.p`
     font-weight: 600;
     font-size: 1.2rem;
+    margin: 0 8px 0 0;
     @media only screen and (min-width: 725px) {
         font-size: 1.8rem;
-    }
-    margin: 0;
-    margin-right: 12px;
+        margin: 0 12px 0 0;
+    };
     cursor: pointer;
     color: ${props => {
         if (props.capabilities === 1) {
@@ -263,3 +269,53 @@ export const Capability = styled.p`
     }}
 `
 
+// SoftwareEngineerAbout.js
+export const SectionContainer = styled.div`
+    width: 100%;
+    margin-bottom: 32px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+`
+
+export const SectionHeaderContainer = styled.div`
+    display: flex;
+    position: relative;
+    flex-direction: column;
+`
+
+export const SectionHeader = styled.h1`
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: ${props => props.lightMode ? '#333333' : '#fff'}
+`
+
+export const SectionBodyItem = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    width: 120px;
+    a {
+        color: ${props => props.lightMode ? '#333333' : '#fff'}
+    }
+    h3 {
+        color: ${props => props.lightMode ? '#333333' : '#fff'}
+    }
+`
+
+export const ProjectStack = styled.div`
+    flex-direction: row;
+    display: flex;
+    margin-top: 4px;
+`
+
+// Gradient.js
+export const GradientContainer = styled.div`
+    height: 400px;
+    display: flex;
+    width: 100%;
+    position: absolute;
+`

@@ -17,7 +17,7 @@ const DesignerAbout = ({ capabilities, lightMode }) => {
                 Designer.map(section => {
                     return (
                         <>
-                            {section.websites && <h4>Websites</h4>}
+                            {section.websites && <h3>Websites</h3>}
                             {section.websites && section.websites.map(site => {
                                 return <a alt="brokenLink" rel="noopener noreferrer" target="_blank" href={site.link}>{site.title}</a>
                             })}
