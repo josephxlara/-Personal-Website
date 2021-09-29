@@ -38,6 +38,109 @@ export const Container = styled.div`
     }};
 `
 
+export const SectionHeader = styled.h1`
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: ${props => props.lightMode ? '#333333' : '#fff'}
+`
+
+export const AboutContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    margin-top: ${props => {
+        if (props.capabilities === 1) {
+            return '440px'
+        }
+        
+        return '120px'
+    }};
+    max-width: 600px;
+    img {
+        display: flex;
+        width: 100%;
+        margin-bottom: -12px;
+    };
+    p {
+        font-weight: 600;
+        font-size: 1rem;
+        align-self: flex-start;
+        margin-bottom: ${props => {
+            if (props.isDesigner) {
+                return '128px'
+            }
+
+            else {
+                return '64px'
+            }
+        }};
+        color: ${props => props.lightMode ? '#333333' : 'white'};
+    };
+    a {
+        margin-bottom: ${props => {
+            if (props.isDesigner) {
+                return '12px';
+            }
+
+            else {
+                return '0';
+            }
+        }};
+        font-weight: 500;
+        color: ${props => {
+            if (props.lightMode) {
+                return '#333333'
+            }
+
+            else {
+                return '#fff'
+            }
+        }};
+        align-self: ${props => {
+            if (props.isDesigner) {
+                return 'flex-start';
+            }
+        }};
+        text-decoration: none;
+        :hover {
+            text-decoration: underline;
+        }
+    };
+    a:last-of-type {
+        margin-bottom: ${props => {
+            if (props.isDesigner) {
+                return '64px'
+            }
+
+            else {
+                return '0'
+            }
+        }};
+    };
+    h3 {
+        color: ${props => props.lightMode ? '#333333' : 'white'}
+    };
+    h4 {
+        margin: 0;
+        margin-bottom: 12px;
+        padding: 0;
+        font-size: 1.8rem;
+        color: ${props => {
+            if (props.lightMode) {
+                return '#333333'
+            }
+
+            else {
+                return '#fff'
+            }
+        }};
+        align-self: flex-start;
+        font-weight: 600;
+`
+
 // SourceButton.js
 export const SourceButtonContainer = styled.div`
     position: absolute;
@@ -143,123 +246,3 @@ export const Capability = styled.p`
     }}
 `
 
-
-// SoftwareEngineerAbout.js
-export const SectionHeader = styled.h1`
-    margin: 0;
-    font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 8px;
-    color: ${props => props.lightMode ? '#333333' : '#fff'}
-`
-
-export const AboutContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 320px;
-    margin-top: ${props => {
-        if (props.capabilities === 1) {
-            return '440px'
-        }
-        
-        return '120px'
-    }};
-    max-width: 600px;
-    img {
-        display: flex;
-        width: 100%;
-        margin-bottom: -12px;
-    };
-    p {
-        font-weight: 600;
-        font-size: 1rem;
-        align-self: flex-start;
-        margin-bottom: ${props => {
-            if (props.isDesigner) {
-                return '128px'
-            }
-
-            else {
-                return '64px'
-            }
-        }};
-        color: ${props => props.lightMode ? '#333333' : 'white'}
-    };
-    h3 {
-        color: ${props => props.lightMode ? '#333333' : 'white'}
-    };
-`
-
-export const AboutContainerDesigner = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 320px;
-    margin-top: ${props => {
-        if (props.capabilities === 1) {
-            return '440px'
-        }
-        
-        return '120px'
-    }};
-    max-width: 600px;
-    img {
-        display: flex;
-        width: 100%;
-        margin-bottom: -12px;
-    };
-    h4 {
-        margin: 0;
-        margin-bottom: 12px;
-        padding: 0;
-        font-size: 1.8rem;
-        color: ${props => {
-            if (props.lightMode) {
-                return '#333333'
-            }
-
-            else {
-                return '#fff'
-            }
-        }};
-        align-self: flex-start;
-        font-weight: 600;
-    };
-    a {
-        margin-bottom: 12px;
-        font-weight: 500;
-        color: ${props => {
-            if (props.lightMode) {
-                return '#333333'
-            }
-
-            else {
-                return 'white'
-            }
-        }};
-        align-self: flex-start;
-        text-decoration: none;
-        :hover {
-            text-decoration: underline;
-        }
-    };
-    a:last-of-type {
-        margin-bottom: 64px;
-    };
-    p {
-        font-weight: 600;
-        font-size: 1rem;
-        align-self: flex-start;
-        margin-bottom: ${props => {
-            if (props.isDesigner) {
-                return '128px'
-            }
-
-            else {
-                return '64px'
-            }
-        }};
-        color: ${props => props.lightMode ? '#333333' : 'white'}
-    }
-`
