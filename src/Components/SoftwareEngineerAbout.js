@@ -4,7 +4,7 @@ import { SoftwareEngineer } from '../Constants/SoftwareEngineer';
 import styled from 'styled-components';
 
 // Styled Components
-import { InformationContainer } from '../StyledComponents/StyledComponents';
+import { InformationContainer } from '../StyledComponents/';
 
 // Style
 import '../styles.scss';

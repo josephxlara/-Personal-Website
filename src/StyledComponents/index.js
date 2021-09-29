@@ -6,7 +6,6 @@ export const Container = styled.div`
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
     z-index: -999;
     background-color: ${props => props.lightMode ? 'white' : '#333333'};
     @media only screen and (min-height: ${props => {
@@ -40,15 +39,7 @@ export const Container = styled.div`
 `
 
 export const SwitchDiv = styled.div`
-    position: ${props => {
-        if (props.capabilities === 3) {
-            return 'fixed';
-        }
-
-        else {
-            return 'absolute';
-        }
-    }}};
+    position: fixed;
     width: 60px;
     height: 34px;
     top: 0;
@@ -154,7 +145,6 @@ export const InformationContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: 320px;
-    }};
     margin-top: ${props => {
         if (props.capabilities === 1) {
             return '440px'
@@ -167,6 +157,44 @@ export const InformationContainer = styled.div`
         display: flex;
         width: 100%;
         margin-bottom: -12px;
+    };
+    h4 {
+        margin: 0;
+        margin-bottom: 12px;
+        padding: 0;
+        font-size: 1.8rem;
+        color: ${props => {
+            if (props.lightMode) {
+                return '#333333'
+            }
+
+            else {
+                return '#fff'
+            }
+        }};
+        align-self: flex-start;
+        font-weight: 600;
+    };
+    a {
+        margin-bottom: 12px;
+        font-weight: 500;
+        color: ${props => {
+            if (props.lightMode) {
+                return '#333333'
+            }
+
+            else {
+                return 'white'
+            }
+        }};
+        align-self: flex-start;
+        text-decoration: none;
+        :hover {
+            text-decoration: underline;
+        }
+    };
+    a:last-of-type {
+        margin-bottom: 64px;
     };
     p {
         font-weight: 600;

@@ -13,39 +13,52 @@ import {
 
 export const Designer = [
     {
-        image: TNOEvents,
+        websites: [
+            {
+                title: 'Green Payment Solutions',
+                link: 'https://www.greenpaymentsolutions.com/',
+            },
+            {
+                title: 'TNO Events',
+                link: 'https://www.tnoevents.com/'
+            }
+            
+        ]
+    },
+    {
+        graphic: TNOEvents,
         caption: 'Freelance, 2021'
     },
     {
-        image: PantryLogo,
+        graphic: PantryLogo,
         caption: 'Pantry.io Logo, 2021'
     },
     {
-        image: PantryIcons,
+        graphic: PantryIcons,
         caption: 'Pantry.io Icons, 2021'
     },
     {
-        image: Luxor,
+        graphic: Luxor,
         caption: 'Freelance, 2019',
     },
     {
-        image: BBSBMGBusinessCard,
+        graphic: BBSBMGBusinessCard,
         caption: 'Graphic Design Internship, 2019'
     },
     {
-        image: BBSLogo,
+        graphic: BBSLogo,
         caption: 'Graphic Design Internship, 2019'
     },
     {
-        image: GPSAd,
+        graphic: GPSAd,
         caption: '(Ad) Graphic Design Internship, 2019'
     },
     {
-        image: GPSLogo,
+        graphic: GPSLogo,
         caption: 'Graphic Design Internship, 2019'
     },
     {
-        image: OppositeEnds,
+        graphic: OppositeEnds,
         caption: 'Opposite Ends, 2018',
     },
 ]

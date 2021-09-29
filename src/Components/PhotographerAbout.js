@@ -3,7 +3,7 @@ import React from 'react';
 import { Photographer } from '../Constants/Photographer';
 
 // Styled Components
-import { InformationContainer } from '../StyledComponents/StyledComponents';
+import { InformationContainer } from '../StyledComponents/';
 
 // Style
 import '../styles.scss';

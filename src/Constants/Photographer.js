@@ -12,38 +12,38 @@ import TheSpeedOfLight from '../Photographs/TheSpeedOfLight.jpg';
 export const Photographer = [
     {
         image: HollywoodSign,
-        caption: 'Hollywood Sign, 2017',
+        caption: '"Iconography", 2017',
     },
     {
         image: PalmTrees,
-        caption: 'Palm Trees, 2017',
+        caption: '"Palm Trees", 2017',
     },
     {
         image: PalmTrees2,
-        caption: 'Palm Trees pt.2, 2017',
+        caption: '"Palm Trees pt.2", 2017',
     },
     {
         image: PalmTrees3,
-        caption: 'Palm Trees pt.3, 2017',
+        caption: '"Palm Trees pt.3", 2017',
     },
     {
         image: PalmTree,
-        caption: 'Palm Tree, 2017',
+        caption: '"Blowing in the Wind", 2017',
     },
     {
         image: DowntownLA,
-        caption: 'Downtown LA, 2017',
+        caption: '"Landscape and Architecture", 2017',
     },
     {
         image: AStreetInLA,
-        caption: 'The Streets, 2017',
+        caption: '"Still", 2017',
     },
     {
         image: Hillside,
-        caption: 'Somewhere In The Hills, 2017',
+        caption: '"Hillside", 2017',
     },
     {
         image: TheSpeedOfLight,
-        caption: 'The Speed of Light, 2017',
+        caption: '"The Speed of Light", 2017',
     }
 ]

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 // Styled Components
 import { 
   Container,
-} from './StyledComponents/StyledComponents';
+} from './StyledComponents/';
 
 // Components
 import SoftwareEngineerAbout from './Components/SoftwareEngineerAbout';

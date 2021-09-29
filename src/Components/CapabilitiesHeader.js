@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Styled Components
-import { Header, Capability } from '../StyledComponents/StyledComponents';
+import { Header, Capability } from '../StyledComponents/';
 
 const CapabilitiesHeader = ({ lightMode, capabilities, setCapabilities }) => {
     return (
