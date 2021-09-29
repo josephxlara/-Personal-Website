@@ -62,22 +62,58 @@ export const AboutContainer = styled.div`
     img {
         display: flex;
         width: 100%;
-        margin-bottom: -12px;
+        margin-bottom: -8px;
+    };
+    h3 {    
+        font-weight: 500;
     };
     p {
-        font-weight: 600;
-        font-size: 1rem;
+        font-weight: 500;
         align-self: flex-start;
-        margin-bottom: ${props => {
+        font-size: ${props => {
+            if (props.isPhotographer) {
+                return '1rem';
+            }
             if (props.isDesigner) {
-                return '128px'
+                return '1rem';
+            }
+        }};
+        margin-bottom: ${props => {
+            if (props.isPhotographer) {
+                return '64px'
+            }
+            if (props.isDesigner) {
+                return '128px';
+            }
+            else {
+                return '0';
+            }
+        }};
+        color: ${props => {
+            if (props.lightMode) {
+                return '#333333'
             }
 
             else {
-                return '64px'
+                return '#fff'
             }
         }};
-        color: ${props => props.lightMode ? '#333333' : 'white'};
+    };
+    h4 {
+        margin: 0;
+        margin-bottom: 12px;
+        padding: 0;
+        font-size: 1.8rem;
+        color: ${props => {
+            if (props.lightMode) {
+                return '#333333'
+            }
+            else {
+                return '#fff'
+            }
+        }};
+        align-self: flex-start;
+        font-weight: 600;
     };
     a {
         margin-bottom: ${props => {
@@ -120,25 +156,6 @@ export const AboutContainer = styled.div`
             }
         }};
     };
-    h3 {
-        color: ${props => props.lightMode ? '#333333' : 'white'}
-    };
-    h4 {
-        margin: 0;
-        margin-bottom: 12px;
-        padding: 0;
-        font-size: 1.8rem;
-        color: ${props => {
-            if (props.lightMode) {
-                return '#333333'
-            }
-
-            else {
-                return '#fff'
-            }
-        }};
-        align-self: flex-start;
-        font-weight: 600;
 `
 
 // SourceButton.js

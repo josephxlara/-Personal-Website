@@ -28,17 +28,16 @@ const AboutSoftwareEngineer = ({ lightMode, capabilities }) => {
                                                 {sectionBodyItem.link 
                                                 ? 
                                                 <a 
-                                                    style={{ color: lightMode ? '#333333' : 'white' }} 
                                                     alt='blankLink' 
                                                     rel="noopener noreferrer" 
                                                     target="_blank" 
                                                     href={sectionBodyItem.link}
+                                                    style={{ color: lightMode ? '#333333' : '#fff'}}
                                                 >
                                                     {sectionBodyItem.item}
                                                 </a> 
                                                 : 
-                                                <h3 
-                                                >
+                                                <h3 style={{ color: lightMode ? '#333333' : '#fff'}}>
                                                     {sectionBodyItem.item}
                                                 </h3>
                                                 }

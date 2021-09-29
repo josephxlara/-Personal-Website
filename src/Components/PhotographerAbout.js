@@ -9,8 +9,10 @@ import { AboutContainer } from '../StyledComponents/';
 import '../styles.scss';
 
 const PhotographerAbout = ({ capabilities, lightMode }) => {
+    const isPhotographer = true;
+
     return (
-        <AboutContainer lightMode={lightMode} capabilities={capabilities}>
+        <AboutContainer isPhotographer={isPhotographer} lightMode={lightMode} capabilities={capabilities}>
             {
                 Photographer.map(section => {
                     return (
