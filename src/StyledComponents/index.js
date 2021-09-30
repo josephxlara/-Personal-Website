@@ -14,11 +14,11 @@ export const Container = styled.div`
         }
 
         if (props.capabilities === 2) {
-            return '5400px';
+            return '5320px';
         }
 
         if (props.capabilities === 3) {
-            return '6300px';
+            return '6240px';
         }
     }}) {
         height: 100vh;
@@ -29,11 +29,11 @@ export const Container = styled.div`
         }
 
         if (props.capabilities === 2) {
-            return '5400px';
+            return '5320px';
         }
 
         else {
-            return '6300px';
+            return '6240px';
         }
     }};
 `
@@ -54,7 +54,7 @@ export const AboutContainer = styled.div`
     img {
         display: flex;
         width: 100%;
-        margin-bottom: -4px;
+        margin-bottom: -8px;
     };
     h3 {    
         margin: 0;
@@ -63,7 +63,14 @@ export const AboutContainer = styled.div`
                 return '12px'
             }
         }};
-        font-weight: 500;
+        font-weight: ${props => {
+            if (props.isSoftwareEngineer) {
+                return '400';
+            }
+            else {
+                return '500'
+            }
+        }};
         font-size: ${props => {
             if (props.isDesigner) {
                 return '1.8rem';
@@ -122,7 +129,7 @@ export const AboutContainer = styled.div`
         margin: 0;
         margin-bottom: ${props => {
             if (props.isDesigner) {
-                return '12px';
+                return '8px';
             }
 
             else {
@@ -131,7 +138,7 @@ export const AboutContainer = styled.div`
         }};
         font-size: 14px;
         display: flex;
-        font-weight: 500;
+        font-weight: 400;
         color: ${props => {
             if (props.lightMode) {
                 return '#333333'

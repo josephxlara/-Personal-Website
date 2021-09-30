@@ -16,8 +16,10 @@ import {
 import '../styles.scss';
 
 const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
+    const isSoftwareEngineer = true;
+
     return (
-        <AboutContainer capabilities={capabilities}>
+        <AboutContainer isSoftwareEngineer={isSoftwareEngineer} capabilities={capabilities}>
             {
                 SoftwareEngineer.map(section => {
                     return (
