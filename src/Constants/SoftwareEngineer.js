@@ -32,7 +32,7 @@ import {
 
 export const SoftwareEngineer = [
     {
-        sectionHeader: 'About',
+        sectionHeader: 'Interests',
         sectionIcon: RocketShip,
         sectionBody: [
             {
@@ -111,7 +111,7 @@ export const SoftwareEngineer = [
         ]
     },
     {
-        sectionHeader: 'Skills',
+        sectionHeader: 'Toolbox',
         sectionIcon: Box,
         sectionBody: [
             {
@@ -153,7 +153,7 @@ export const SoftwareEngineer = [
         ]
     },
     {
-        sectionHeader: 'Info',
+        sectionHeader: 'Contact',
         sectionIcon: Contact,
         sectionBody: [
             {
