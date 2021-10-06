@@ -1,6 +1,6 @@
 // General
 import React from 'react';
-import { SoftwareEngineer } from '../Constants/SoftwareEngineer';
+import { SoftwareEngineer } from '../Constants/';
 
 // Styled Components
 import { 

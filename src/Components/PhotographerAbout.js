@@ -1,6 +1,6 @@
 // General
 import React from 'react';
-import { Photographer } from '../Constants/Photographer';
+import { Photographer } from '../Constants/';
 
 // Styled Components
 import { AboutContainer } from '../StyledComponents/';

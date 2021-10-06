@@ -9,7 +9,7 @@ import AStreetInLA from '../Photographs/AStreetInLA.jpg';
 import Hillside from '../Photographs/Hillside.jpg';
 import TheSpeedOfLight from '../Photographs/TheSpeedOfLight.jpg';
 
-export const Photographer = [
+const Photographer = [
     {
         image: HollywoodSign,
         caption: '"Iconography", 2017',
@@ -47,3 +47,5 @@ export const Photographer = [
         caption: '"The Speed of Light", 2017',
     }
 ]
+
+export default Photographer;

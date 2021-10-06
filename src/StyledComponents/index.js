@@ -1,5 +1,6 @@
 // General
 import styled from 'styled-components';
+import { colors } from '../Design';
 
 export const Container = styled.div`
     width: 100%;
@@ -7,7 +8,7 @@ export const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     z-index: -999;
-    background-color: ${props => props.lightMode ? 'white' : '#333333'};
+    background-color: ${props => props.lightMode ? colors.white : colors.gray.dark1};
     @media only screen and (min-height: ${props => {
         if (props.capabilities === 1) {
             return '1560px';
@@ -88,10 +89,10 @@ export const AboutContainer = styled.div`
         }};
         color: ${props => {
             if (props.lightMode) {
-                return '#333333'
+                return colors.gray.dark1
             }
             else {
-                return '#fff'
+                return colors.white
             }
         }};
     };
@@ -117,11 +118,11 @@ export const AboutContainer = styled.div`
         }};
         color: ${props => {
             if (props.lightMode) {
-                return '#333333'
+                return colors.gray.dark1
             }
 
             else {
-                return '#fff'
+                return colors.white
             }
         }};
     };
@@ -141,11 +142,11 @@ export const AboutContainer = styled.div`
         font-weight: 400;
         color: ${props => {
             if (props.lightMode) {
-                return '#333333'
+                return colors.gray.dark1
             }
 
             else {
-                return '#fff'
+                return colors.white
             }
         }};
         align-self: ${props => {
@@ -184,10 +185,10 @@ export const SourceButtonContainer = styled.div`
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: #2196F3;
+    background-color: ${colors.blue.blue1};
     z-index: 999;
     :hover {
-        background-color: #208de3;
+        background-color: ${colors.blue.blue2};
     }
     & > a, a:link, a:visited {
     color: white;
@@ -244,7 +245,8 @@ export const Capability = styled.p`
     color: ${props => {
         if (props.capabilities === 1) {
             if (props.number === props.capabilities) {
-                return '#fff'
+                return colors.white
+
             }
 
             else {
@@ -255,21 +257,21 @@ export const Capability = styled.p`
         else {
             if (props.lightMode) {
                 if (props.capabilities === props.number) {
-                    return '#333333'
+                    return colors.gray.dark1
                 }
 
                 else {
-                    return '#dedede'
+                    return colors.gray.dark2
                 }
             }
 
             else {
                 if (props.capabilities === props.number) {
-                    return '#fff'
+                    return colors.white
                 }
 
                 else {
-                    return '#4a4a4a'
+                    return colors.gray.light1
                 }
             }
         }
@@ -296,7 +298,7 @@ export const SectionHeader = styled.h1`
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 8px;
-    color: ${props => props.lightMode ? '#333333' : '#fff'}
+    color: ${props => props.lightMode ? colors.gray.dark1 : colors.white}
 `
 
 export const SectionBodyItem = styled.div`
@@ -306,10 +308,10 @@ export const SectionBodyItem = styled.div`
     flex-wrap: wrap;
     width: 120px;
     a {
-        color: ${props => props.lightMode ? '#333333' : '#fff'}
+        color: ${props => props.lightMode ? colors.gray.dark1 : colors.primaryWhite}
     }
     h3 {
-        color: ${props => props.lightMode ? '#333333' : '#fff'}
+        color: ${props => props.lightMode ? colors.gray.dark1 : colors.primaryWhite}
     }
 `
 

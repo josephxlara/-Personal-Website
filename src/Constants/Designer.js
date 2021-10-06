@@ -11,7 +11,7 @@ import {
     GPSLogo,
 } from '../SVGsForDesigner'
 
-export const Designer = [
+const Designer = [
     {
         websites: [
             {
@@ -62,3 +62,5 @@ export const Designer = [
         caption: 'Opposite Ends, 2018',
     },
 ]
+
+export default Designer;

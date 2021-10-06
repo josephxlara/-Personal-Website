@@ -1,6 +1,6 @@
 // General
 import React from 'react';
-import { Designer } from '../Constants/Designer';
+import { Designer } from '../Constants/';
 
 // Styled Components
 import { AboutContainer } from '../StyledComponents/';
