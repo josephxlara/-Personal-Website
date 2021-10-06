@@ -12,3 +12,11 @@ body {
 code {
   font-family: menlo, inconsolata, monospace
 }
+
+* {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
