@@ -12,7 +12,8 @@ import {
     LinkedIn,
     Deloitte,
     Illustrator,
-    Photoshop
+    Photoshop,
+    PantryLogo
 } from '../TechLogos';
 
 import { 
@@ -68,22 +69,22 @@ const SoftwareEngineer = [
         sectionBody: [
             {
                 isCompany: true,
-                icon: Deloitte,
+                logo: Deloitte,
+                website: 'https://www2.deloitte.com/us/en.html',
             },
-            {
-                item: 'Pantry.io',
-                stack: [
-                    Javascript, ReactLogo, Expo, Firebase
-                ],
-                link: 'https://thepantryapp.io/',
-                aboutExperience: 'I designed and deployed a cross-platform mobile application that comes with 4 features and one in-app subscription. Download Pantry.io today to make your grocery-buying experience better!'
-            }
         ]
     },
     {
         sectionHeader: 'Projects',
         sectionIcon: Water,
         sectionBody: [
+            {
+                item: 'Pantry.io',
+                stack: [
+                    Javascript, ReactLogo, Expo, Firebase
+                ],
+                link: 'https://thepantryapp.io/'
+            },
             {
                 item: 'Memories',
                 stack: [

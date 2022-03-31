@@ -33,18 +33,28 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                     section.sectionBody.map(sectionBodyItem => {
                                         return (
                                             <SectionBodyItem lightMode={lightMode}>
-                                                {sectionBodyItem.icon && sectionBodyItem.isCompany && 
-                                                    <sectionBodyItem.icon 
-                                                        lightMode={lightMode} 
-                                                        style={{ 
-                                                            marginBottom: '-20px', 
-                                                            marginTop: '-20px', 
-                                                            marginRight: '8px', 
-                                                            display: 'flex'
-                                                        }} 
-                                                        height={64} 
-                                                        width={64} 
-                                                    />
+                                                {sectionBodyItem.isCompany && 
+                                                <>
+                                                    <>
+                                                    <a 
+                                                        alt='blankLink' 
+                                                        rel="noopener noreferrer" 
+                                                        target="_blank" 
+                                                        href={sectionBodyItem.website}
+                                                        style={{ zIndex: 99 }}
+                                                    >
+                                                        <sectionBodyItem.logo 
+                                                            lightMode={lightMode} 
+                                                            style={{ 
+                                                                display: 'flex',
+                                                                marginTop: '4px',
+                                                                marginBottom: '4px'
+                                                            }} 
+                                                            width={88} 
+                                                        />
+                                                    </a>
+                                                    </>
+                                                </>
                                                 }
 
                                                 {sectionBodyItem.icon && !sectionBodyItem.isCompany && 

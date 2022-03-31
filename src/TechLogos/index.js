@@ -13,3 +13,4 @@ export { default as Instagram } from './Instagram';
 export { default as Illustrator } from './Illustrator';
 export { default as Photoshop } from './Photoshop';
 export { default as Deloitte } from './Deloitte';
+export { default as PantryLogo } from './PantryLogo';
