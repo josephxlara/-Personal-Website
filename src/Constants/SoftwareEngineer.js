@@ -152,6 +152,10 @@ const SoftwareEngineer = [
                 icon: MongoDB
             },
             {
+                item: 'Firebase',
+                icon: Firebase
+            },
+            {
                 item: 'Illustrator',
                 icon: Illustrator
             },
