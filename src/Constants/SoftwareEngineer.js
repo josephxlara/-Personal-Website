@@ -136,6 +136,10 @@ const SoftwareEngineer = [
                 icon: ReactLogo
             },
             {
+                item: 'React Native',
+                icon: ReactLogo
+            },
+            {
                 item: 'Node.js',
                 icon: Node
             },

@@ -11,7 +11,7 @@ export const Container = styled.div`
     background-color: ${props => props.lightMode ? colors.white : colors.gray.dark1};
     @media only screen and (min-height: ${props => {
         if (props.capabilities === 1) {
-            return '1560px';
+            return '1600px';
         }
 
         if (props.capabilities === 2) {
@@ -26,7 +26,7 @@ export const Container = styled.div`
     };
     height: ${props => {
         if (props.capabilities === 1) {
-            return '1560px';
+            return '1600px';
         }
 
         if (props.capabilities === 2) {
