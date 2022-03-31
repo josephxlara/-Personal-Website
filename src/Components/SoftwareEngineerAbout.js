@@ -33,7 +33,31 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                     section.sectionBody.map(sectionBodyItem => {
                                         return (
                                             <SectionBodyItem lightMode={lightMode}>
-                                                {sectionBodyItem.icon && <sectionBodyItem.icon lightMode={lightMode} style={{ marginRight: '8px', display: 'flex' }} height={16} width={16} />}
+                                                {sectionBodyItem.icon && sectionBodyItem.isCompany && 
+                                                    <sectionBodyItem.icon 
+                                                        lightMode={lightMode} 
+                                                        style={{ 
+                                                            marginBottom: '-20px', 
+                                                            marginTop: '-20px', 
+                                                            marginRight: '8px', 
+                                                            display: 'flex'
+                                                        }} 
+                                                        height={64} 
+                                                        width={64} 
+                                                    />
+                                                }
+
+                                                {sectionBodyItem.icon && !sectionBodyItem.isCompany && 
+                                                    <sectionBodyItem.icon 
+                                                        lightMode={lightMode} 
+                                                        style={{ 
+                                                            marginRight: '8px', 
+                                                            display: 'flex' 
+                                                        }} 
+                                                        height={16} 
+                                                        width={16} 
+                                                    />
+                                                }
                                                 {sectionBodyItem.link 
                                                 ? 
                                                 <a 

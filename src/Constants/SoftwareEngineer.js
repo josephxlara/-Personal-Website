@@ -10,7 +10,7 @@ import {
     Express,
     GitHub,
     LinkedIn,
-    Instagram,
+    Deloitte,
     Illustrator,
     Photoshop
 } from '../TechLogos';
@@ -66,6 +66,10 @@ const SoftwareEngineer = [
         sectionHeader: 'Experience',
         sectionIcon: Experience,
         sectionBody: [
+            {
+                isCompany: true,
+                icon: Deloitte,
+            },
             {
                 item: 'Pantry.io',
                 stack: [
