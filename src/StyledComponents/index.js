@@ -313,7 +313,7 @@ export const SectionBodyItem = styled.div`
     }
     h3 {
         font-weight: 400;
-s        color: ${props => props.lightMode ? colors.gray.dark1 : colors.primaryWhite}
+        color: ${props => props.lightMode ? colors.gray.dark1 : colors.primaryWhite}
     }
 `
 

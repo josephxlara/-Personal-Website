@@ -1,6 +1,7 @@
 // General
 import React from 'react';
 import { SoftwareEngineer } from '../Constants/';
+import { colors } from '../Design';
 
 // Styled Components
 import { 
@@ -33,7 +34,7 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                     section.sectionBody.map(sectionBodyItem => {
                                         return (
                                             <SectionBodyItem lightMode={lightMode}>
-                                                {/* Company experience */}
+                                                {/* 'Experience' section */}
                                                 {sectionBodyItem.isCompany && 
                                                 <>
                                                     <a 
@@ -55,6 +56,7 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                     </a>
                                                     <p style={{ 
                                                         fontSize: '12px',
+                                                        color: lightMode ? colors.gray.dark1 : colors.primaryWhite
 
                                                     }}>
                                                         {sectionBodyItem.role}
@@ -62,7 +64,7 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                 </>
                                                 }
 
-                                                {/* Company experience */}
+                                                {/* 'Toolbox' section */}
                                                 {sectionBodyItem.icon && !sectionBodyItem.isCompany && 
                                                     <sectionBodyItem.icon 
                                                         lightMode={lightMode} 
@@ -75,7 +77,7 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                     />
                                                 }
 
-                                                {/* Section with links like 'Projects' & 'Contact' */}
+                                                {/* 'Projects' & 'Contact' sections */}
                                                 {sectionBodyItem.link 
                                                 ? 
                                                 <a 
