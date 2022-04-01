@@ -11,7 +11,7 @@ export const Container = styled.div`
     background-color: ${props => props.lightMode ? colors.white : colors.gray.dark1};
     @media only screen and (min-height: ${props => {
         if (props.capabilities === 1) {
-            return '1600px';
+            return '1640px';
         }
 
         if (props.capabilities === 2) {
@@ -26,7 +26,7 @@ export const Container = styled.div`
     };
     height: ${props => {
         if (props.capabilities === 1) {
-            return '1600px';
+            return '1640px';
         }
 
         if (props.capabilities === 2) {
@@ -295,7 +295,7 @@ export const SectionHeaderContainer = styled.div`
 
 export const SectionHeader = styled.h1`
     margin: 0;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 24px;
     margin-bottom: 8px;
     color: ${props => props.lightMode ? colors.gray.dark1 : colors.white}
@@ -308,10 +308,12 @@ export const SectionBodyItem = styled.div`
     flex-wrap: wrap;
     width: 120px;
     a {
+        font-weight: 400;
         color: ${props => props.lightMode ? colors.gray.dark1 : colors.primaryWhite}
     }
     h3 {
-        color: ${props => props.lightMode ? colors.gray.dark1 : colors.primaryWhite}
+        font-weight: 400;
+s        color: ${props => props.lightMode ? colors.gray.dark1 : colors.primaryWhite}
     }
 `
 

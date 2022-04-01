@@ -33,27 +33,26 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                     section.sectionBody.map(sectionBodyItem => {
                                         return (
                                             <SectionBodyItem lightMode={lightMode}>
+                                                {/* Company experience */}
                                                 {sectionBodyItem.isCompany && 
                                                 <>
-                                                    <>
-                                                        <a 
-                                                            alt='blankLink' 
-                                                            rel="noopener noreferrer" 
-                                                            target="_blank" 
-                                                            href={sectionBodyItem.website}
-                                                        >
-                                                            <sectionBodyItem.logo 
-                                                                lightMode={lightMode} 
-                                                                style={{ 
-                                                                    display: 'flex',
-                                                                    marginTop: '-28px',
-                                                                    marginBottom: '-40px'
-                                                                }} 
-                                                                height={88}
-                                                                width={88}
-                                                            />
-                                                        </a>
-                                                    </>
+                                                    <a 
+                                                        alt='blankLink' 
+                                                        rel="noopener noreferrer" 
+                                                        target="_blank" 
+                                                        href={sectionBodyItem.website}
+                                                    >
+                                                        <sectionBodyItem.logo 
+                                                            lightMode={lightMode} 
+                                                            style={{ 
+                                                                display: 'flex',
+                                                                marginTop: '-28px',
+                                                                marginBottom: '-40px'
+                                                            }} 
+                                                            height={88}
+                                                            width={88}
+                                                        />
+                                                    </a>
                                                     <p style={{ 
                                                         fontSize: '12px',
 
@@ -63,6 +62,7 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                 </>
                                                 }
 
+                                                {/* Company experience */}
                                                 {sectionBodyItem.icon && !sectionBodyItem.isCompany && 
                                                     <sectionBodyItem.icon 
                                                         lightMode={lightMode} 
@@ -74,6 +74,8 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                         width={16} 
                                                     />
                                                 }
+
+                                                {/* Section with links like 'Projects' & 'Contact' */}
                                                 {sectionBodyItem.link 
                                                 ? 
                                                 <a 
@@ -89,14 +91,18 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                     {sectionBodyItem.item}
                                                 </h3>
                                                 }
-                                                <ProjectStack>
-                                                    {
-                                                        sectionBodyItem.stack &&
-                                                        sectionBodyItem.stack.map(Tech => {
-                                                            return <Tech lightMode={lightMode} style={{ marginRight: '6px', display: 'flex' }} width={16} height={16} />
-                                                        })
-                                                    }
-                                                </ProjectStack>
+                                                {
+                                                    sectionBodyItem.stack &&
+                                                    <ProjectStack>
+                                                        {
+                                                            sectionBodyItem.stack.map(Tech => {
+                                                                return (
+                                                                    <Tech lightMode={lightMode} style={{ marginRight: '6px', display: 'flex' }} width={16} height={16} />
+                                                                )
+                                                            })
+                                                        }
+                                                    </ProjectStack>
+                                                }
                                             </SectionBodyItem>
                                         )
                                     })
