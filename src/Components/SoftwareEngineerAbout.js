@@ -36,24 +36,30 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                 {sectionBodyItem.isCompany && 
                                                 <>
                                                     <>
-                                                    <a 
-                                                        alt='blankLink' 
-                                                        rel="noopener noreferrer" 
-                                                        target="_blank" 
-                                                        href={sectionBodyItem.website}
-                                                        style={{ zIndex: 99 }}
-                                                    >
-                                                        <sectionBodyItem.logo 
-                                                            lightMode={lightMode} 
-                                                            style={{ 
-                                                                display: 'flex',
-                                                                marginTop: '4px',
-                                                                marginBottom: '4px'
-                                                            }} 
-                                                            width={88} 
-                                                        />
-                                                    </a>
+                                                        <a 
+                                                            alt='blankLink' 
+                                                            rel="noopener noreferrer" 
+                                                            target="_blank" 
+                                                            href={sectionBodyItem.website}
+                                                        >
+                                                            <sectionBodyItem.logo 
+                                                                lightMode={lightMode} 
+                                                                style={{ 
+                                                                    display: 'flex',
+                                                                    marginTop: '-28px',
+                                                                    marginBottom: '-40px'
+                                                                }} 
+                                                                height={88}
+                                                                width={88}
+                                                            />
+                                                        </a>
                                                     </>
+                                                    <p style={{ 
+                                                        fontSize: '12px',
+
+                                                    }}>
+                                                        {sectionBodyItem.role}
+                                                    </p>
                                                 </>
                                                 }
 

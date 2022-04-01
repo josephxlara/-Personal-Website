@@ -319,6 +319,7 @@ export const ProjectStack = styled.div`
     flex-direction: row;
     display: flex;
     margin-top: 4px;
+    margin-bottom: 6px;
 `
 
 // Gradient.js

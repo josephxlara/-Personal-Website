@@ -39,7 +39,7 @@ const SoftwareEngineer = [
             {
                 item: 'Basketball',
                 icon: Basketball,
-                link: 'https://www.youtube.com/watch?v=RgB5Ub1GNUU'
+                link: 'https://www.youtube.com/watch?v=eKdWAmx_S80&t=57s'
             },
             {
                 item: 'Design',
@@ -49,12 +49,12 @@ const SoftwareEngineer = [
             {
                 item: 'Philosophy',
                 icon: StackOfBooks,
-                link: 'https://www.youtube.com/watch?v=iP9xNYCr5Js'
+                link: 'https://www.youtube.com/watch?v=2kZRAOXEFPI'
             },
             {
                 item: 'Technology',
                 icon: Arrow,
-                link: 'https://github.com/input-output-hk/cardano-node'
+                link: 'https://www.terra.money/'
             },
             {
                 item: 'Physics',
@@ -71,6 +71,7 @@ const SoftwareEngineer = [
                 isCompany: true,
                 logo: Deloitte,
                 website: 'https://www2.deloitte.com/us/en.html',
+                role: 'React developer'
             },
         ]
     },
