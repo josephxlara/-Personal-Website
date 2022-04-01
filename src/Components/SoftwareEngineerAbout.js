@@ -55,8 +55,9 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                         />
                                                     </a>
                                                     <p style={{ 
+                                                        fontWeight: 400,
                                                         fontSize: '12px',
-                                                        color: lightMode ? colors.gray.dark1 : colors.primaryWhite
+                                                        color: lightMode ? colors.gray.dark1 : colors.white
 
                                                     }}>
                                                         {sectionBodyItem.role}

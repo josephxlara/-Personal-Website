@@ -309,11 +309,11 @@ export const SectionBodyItem = styled.div`
     width: 120px;
     a {
         font-weight: 400;
-        color: ${props => props.lightMode ? colors.gray.dark1 : colors.primaryWhite}
+        color: ${props => props.lightMode ? colors.gray.dark1 : colors.white}
     }
     h3 {
         font-weight: 400;
-        color: ${props => props.lightMode ? colors.gray.dark1 : colors.primaryWhite}
+        color: ${props => props.lightMode ? colors.gray.dark1 : colors.white}
     }
 `
 
