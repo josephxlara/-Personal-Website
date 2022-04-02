@@ -13,7 +13,6 @@ import {
     Deloitte,
     Illustrator,
     Photoshop,
-    PantryLogo
 } from '../TechLogos';
 
 import { 

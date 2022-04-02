@@ -23,19 +23,19 @@ const Designer = [
                 link: 'https://www.tnoevents.com/'
             }
             
-        ]
+        ],
     },
     {
         graphic: TNOEvents,
-        caption: 'Freelance, 2021'
+        caption: 'Freelance, 2021',
     },
     {
         graphic: PantryLogo,
-        caption: 'Pantry.io Logo, 2021'
+        caption: 'Pantry.io Logo, 2021',
     },
     {
         graphic: PantryIcons,
-        caption: 'Pantry.io Icons, 2021'
+        caption: 'Pantry.io Icons, 2021',
     },
     {
         graphic: Luxor,
@@ -43,19 +43,19 @@ const Designer = [
     },
     {
         graphic: BBSBMGBusinessCard,
-        caption: 'Graphic Design Internship, 2019'
+        caption: 'Graphic Design Internship, 2019',
     },
     {
         graphic: BBSLogo,
-        caption: 'Graphic Design Internship, 2019'
+        caption: 'Graphic Design Internship, 2019',
     },
     {
         graphic: GPSAd,
-        caption: '(Ad) Graphic Design Internship, 2019'
+        caption: '(Ad) Graphic Design Internship, 2019',
     },
     {
         graphic: GPSLogo,
-        caption: 'Graphic Design Internship, 2019'
+        caption: 'Graphic Design Internship, 2019',
     },
     {
         graphic: OppositeEnds,

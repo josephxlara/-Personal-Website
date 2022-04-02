@@ -1,9 +1,8 @@
-// Photographs
 import HollywoodSign from '../Photographs/HollywoodSign.jpg';
-import PalmTrees from '../Photographs/Palm Trees.jpg';
-import PalmTrees2 from '../Photographs/Palm Trees pt.2.jpg';
-import PalmTrees3 from '../Photographs/Palm Trees pt.3.jpg';
-import PalmTree from '../Photographs/Palm Tree.jpg';
+import PalmTrees from '../Photographs/PalmTrees.jpg';
+import PalmTrees2 from '../Photographs/PalmTrees2.jpg';
+import PalmTrees3 from '../Photographs/PalmTrees3.jpg';
+import PalmTree from '../Photographs/PalmTree.jpg';
 import DowntownLA from '../Photographs/DowntownLA.jpg';
 import AStreetInLA from '../Photographs/AStreetInLA.jpg';
 import Hillside from '../Photographs/Hillside.jpg';

@@ -22,18 +22,18 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
     return (
         <AboutContainer isSoftwareEngineer={isSoftwareEngineer} capabilities={capabilities}>
             {
-                SoftwareEngineer.map(section => {
+                SoftwareEngineer.map((section, idx) => {
                     return (
-                        <SectionContainer>
-                            <section.sectionIcon style={{ marginRight: '20px' }} height={60} />
+                        <SectionContainer key={idx}>
+                            <section.sectionIcon style={{ marginRight: '20px' }} height={60} width={60} />
                             <SectionHeaderContainer>
                                 <SectionHeader lightMode={lightMode}>
                                     {section.sectionHeader}
                                 </SectionHeader>
                                 {
-                                    section.sectionBody.map(sectionBodyItem => {
+                                    section.sectionBody.map((sectionBodyItem, idx) => {
                                         return (
-                                            <SectionBodyItem lightMode={lightMode}>
+                                            <SectionBodyItem key={idx} lightMode={lightMode}>
                                                 {/* 'Experience' section */}
                                                 {sectionBodyItem.isCompany && 
                                                 <>
@@ -45,20 +45,15 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                     >
                                                         <sectionBodyItem.logo 
                                                             lightMode={lightMode} 
-                                                            style={{ 
-                                                                display: 'flex',
-                                                                marginTop: '-28px',
-                                                                marginBottom: '-40px'
-                                                            }} 
                                                             height={88}
                                                             width={88}
+                                                            style={{ height: '28px', marginBottom: '-12px' }}
                                                         />
                                                     </a>
                                                     <p style={{ 
                                                         fontWeight: 400,
                                                         fontSize: '12px',
-                                                        color: lightMode ? colors.gray.dark1 : colors.white
-
+                                                        color: lightMode ? colors.gray.dark1 : colors.white,
                                                     }}>
                                                         {sectionBodyItem.role}
                                                     </p>
@@ -98,9 +93,9 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                     sectionBodyItem.stack &&
                                                     <ProjectStack>
                                                         {
-                                                            sectionBodyItem.stack.map(Tech => {
+                                                            sectionBodyItem.stack.map((Tech, idx) => {
                                                                 return (
-                                                                    <Tech lightMode={lightMode} style={{ marginRight: '6px', display: 'flex' }} width={16} height={16} />
+                                                                    <Tech key={idx} lightMode={lightMode} style={{ marginRight: '6px', display: 'flex' }} width={16} height={16} />
                                                                 )
                                                             })
                                                         }

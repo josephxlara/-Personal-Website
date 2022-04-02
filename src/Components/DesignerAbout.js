@@ -1,5 +1,5 @@
 // General
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Designer } from '../Constants/';
 
 // Styled Components
