@@ -295,7 +295,7 @@ export const SectionHeaderContainer = styled.div`
 
 export const SectionHeader = styled.h1`
     margin: 0;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
     margin-bottom: 8px;
     color: ${props => props.lightMode ? colors.gray.dark1 : colors.white}
