@@ -47,16 +47,9 @@ const SoftwareEngineerAbout = ({ lightMode, capabilities }) => {
                                                             lightMode={lightMode} 
                                                             height={88}
                                                             width={88}
-                                                            style={{ height: '28px', marginBottom: '-12px' }}
+                                                            style={{ height: '28px' }}
                                                         />
                                                     </a>
-                                                    <p style={{ 
-                                                        fontWeight: 400,
-                                                        fontSize: '12px',
-                                                        color: lightMode ? colors.gray.dark1 : colors.white,
-                                                    }}>
-                                                        {sectionBodyItem.role}
-                                                    </p>
                                                 </>
                                                 }
 

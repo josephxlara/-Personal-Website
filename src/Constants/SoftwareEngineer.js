@@ -70,7 +70,6 @@ const SoftwareEngineer = [
                 isCompany: true,
                 logo: Deloitte,
                 website: 'https://www2.deloitte.com/us/en.html',
-                role: 'React developer'
             },
         ]
     },
