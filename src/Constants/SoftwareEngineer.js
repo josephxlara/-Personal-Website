@@ -13,6 +13,7 @@ import {
     Deloitte,
     Illustrator,
     Photoshop,
+    Rust
 } from '../TechLogos';
 
 import { 
@@ -53,7 +54,7 @@ const SoftwareEngineer = [
             {
                 item: 'Technology',
                 icon: Arrow,
-                link: 'https://www.terra.money/'
+                link: 'https://runonflux.io/'
             },
             {
                 item: 'Physics',
@@ -121,6 +122,10 @@ const SoftwareEngineer = [
             {
                 item: 'Python',
                 icon: Python
+            },
+            {
+                item: 'Rust',
+                icon: Rust
             },
             {
                 item: 'Javascript',

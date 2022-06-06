@@ -14,3 +14,4 @@ export { default as Illustrator } from './Illustrator.js';
 export { default as Photoshop } from './Photoshop.js';
 export { default as Deloitte } from './Deloitte.js';
 export { default as PantryLogo } from './PantryLogo.js';
+export { default as Rust } from './Rust.js';
