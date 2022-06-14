@@ -33,7 +33,7 @@ export const Container = styled.div`
             return '5320px';
         }
 
-        else {
+        if (props.capabilities === 3) {
             return '6240px';
         }
     }};
@@ -59,11 +59,6 @@ export const AboutContainer = styled.div`
     };
     h3 {    
         margin: 0;
-        margin-bottom: ${props => {
-            if (props.isDesigner) {
-                return '12px'
-            }
-        }};
         font-weight: ${props => {
             if (props.isSoftwareEngineer) {
                 return '400';
