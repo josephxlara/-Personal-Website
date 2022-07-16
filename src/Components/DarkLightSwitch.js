@@ -2,18 +2,31 @@
 import React from 'react';
 
 // Styled Components
-import { DarkLightSwitchContainer } from '../StyledComponents/';
+import { 
+    DarkLightSwitchContainer, 
+    DarkLightSwitchButton, 
+    DarkModeMoonComponent,
+    LightModeSunComponent,
+} from '../StyledComponents/';
 
 // Style
-import '../styles.scss'
+import '../styles.scss';
+
+// Components
+import SourceButton from './SourceButton';
 
 const DarkLightSwitch = ({ capabilities, lightMode, setLightMode }) => {
     return (
         <DarkLightSwitchContainer capabilities={capabilities}>
-            <label className="switch">
-                <input type="checkbox" onClick={() => setLightMode(!lightMode)} />
-                <span className="slider round"></span>
-            </label>
+            <SourceButton />
+            <DarkLightSwitchButton onClick={() => setLightMode(!lightMode)}>
+                {lightMode
+                ?
+                <DarkModeMoonComponent />
+                :
+                <LightModeSunComponent />
+                }
+            </DarkLightSwitchButton>
         </DarkLightSwitchContainer>
     )
 }

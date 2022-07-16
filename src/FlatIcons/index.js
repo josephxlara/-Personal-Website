@@ -11,3 +11,5 @@ export { default as Water } from './Water';
 export { default as Wrench } from './Wrench';
 export { default as Mail } from './Mail';
 export { default as LocalStorage } from './LocalStorage';
+export { default as DarkModeMoon } from './DarkModeMoon';
+export { default as LightModeSun } from './LightModeSun';

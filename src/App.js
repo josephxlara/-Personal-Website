@@ -24,7 +24,6 @@ const App = () => {
 
   return (
     <Container capabilities={capabilities} lightMode={lightMode}>
-      <SourceButton />
       <CapabilitiesHeader capabilities={capabilities} setCapabilities={setCapabilities} lightMode={lightMode} />
       <DarkLightSwitch capabilities={capabilities} lightMode={lightMode} setLightMode={setLightMode} />
       {capabilities === 1 && <Gradient lightMode={lightMode} />}

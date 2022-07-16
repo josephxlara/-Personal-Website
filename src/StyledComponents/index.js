@@ -2,6 +2,9 @@
 import styled from 'styled-components';
 import { colors } from '../Design';
 
+// Components
+import { DarkModeMoon, LightModeSun } from '../FlatIcons';
+
 export const Container = styled.div`
     width: 100%;
     justify-content: center;
@@ -171,17 +174,13 @@ export const AboutContainer = styled.div`
 export const SourceButtonContainer = styled.div`
     position: absolute;
     padding: 0 6px 0 6px;
-    top: 0;
-    right: 0;
-    margin-right: 84px;
-    margin-top: 12px;
+    left: 0;
     border-radius: 8px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     display: flex;
     background-color: ${colors.blue.blue1};
-    z-index: 999;
     :hover {
         background-color: ${colors.blue.blue2};
     }
@@ -202,13 +201,22 @@ export const SourceButtonContainer = styled.div`
 // DarkLightSwitch.js
 export const DarkLightSwitchContainer = styled.div`
     position: fixed;
-    width: 60px;
+    width: 100px;
     height: 34px;
     top: 0;
     right: 0;
     margin-right: 12px;
     margin-top: 12px;
+    z-index: 998;
+`
+
+export const DarkLightSwitchButton = styled.button`
+    height: 100%;
+    border: none;
+    background: none;
     z-index: 999;
+    right: 0;
+    position: absolute;
 `
 
 // CapabilitiesHeader.js
@@ -325,4 +333,25 @@ export const GradientContainer = styled.div`
     display: flex;
     width: 100%;
     position: absolute;
+`
+
+// Components
+export const DarkModeMoonComponent = styled(DarkModeMoon)`
+    height: 100%;
+    width: 32px;
+    fill: #000;
+    &:hover {
+        fill: #ededed;
+        cursor: pointer;
+    }
+`
+
+export const LightModeSunComponent = styled(LightModeSun)`
+    height: 100%;
+    width: 32px;
+    fill: #fff;
+    &:hover {
+        fill: #ededed;
+        cursor: pointer;
+    }
 `
