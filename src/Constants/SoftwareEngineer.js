@@ -13,7 +13,8 @@ import {
     Deloitte,
     Illustrator,
     Photoshop,
-    Rust
+    Rust,
+    Next
 } from '../TechLogos';
 
 import { 
@@ -142,6 +143,10 @@ const SoftwareEngineer = [
             {
                 item: 'React Native',
                 icon: ReactLogo
+            },
+            {
+                item: 'Next.js',
+                icon: Next
             },
             {
                 item: 'Node.js',
