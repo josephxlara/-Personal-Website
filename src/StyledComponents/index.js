@@ -174,13 +174,17 @@ export const AboutContainer = styled.div`
 export const SourceButtonContainer = styled.div`
     position: absolute;
     padding: 0 6px 0 6px;
-    left: 0;
+    top: 0;
+    right: 0;
+    margin-right: 60px;
+    margin-top: 12px;
     border-radius: 8px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     display: flex;
     background-color: ${colors.blue.blue1};
+    z-index: 999;
     :hover {
         background-color: ${colors.blue.blue2};
     }
@@ -195,6 +199,7 @@ export const SourceButtonContainer = styled.div`
     width: 40px;
     margin: 0;
     z-index: 999;
+    }
     }
 `
 
@@ -341,7 +346,7 @@ export const DarkModeMoonComponent = styled(DarkModeMoon)`
     width: 32px;
     fill: #000;
     &:hover {
-        fill: #ededed;
+        fill: ${colors.blue.blue2};
         cursor: pointer;
     }
 `

@@ -12,13 +12,9 @@ import {
 // Style
 import '../styles.scss';
 
-// Components
-import SourceButton from './SourceButton';
-
 const DarkLightSwitch = ({ capabilities, lightMode, setLightMode }) => {
     return (
         <DarkLightSwitchContainer capabilities={capabilities}>
-            <SourceButton />
             <DarkLightSwitchButton onClick={() => setLightMode(!lightMode)}>
                 {lightMode
                 ?
